@@ -3,7 +3,7 @@
 <div class ="container">
   <div class="row">
   <h2>{ opts.title }</h2>
-    <div each={ opts.items } class="col-sm-6 col-md-3">
+    <div each={ opts.items } class="col-sm-6 col-md-4">
     <div class="">
       <img src="{ thumb }" class="img-responsive img-rounded img-thumbnail " alt="...">
       <div class="caption">
@@ -54,6 +54,10 @@ items .navbar-brand a {
 }
 items a { transition: all 0.2s ease-out; color:#4b505a}
 //items a:hover, a:active{ opacity: 0.8; color: rgba(0,0,0,0.5);}
+items .row{
+    margin: 25px 25px 25px 25px;
+    padding: 15px 15px 15px 15px;
+}
 items h3 { font-size:  }
 items h2 {  }
 
