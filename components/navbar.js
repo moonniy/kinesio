@@ -28,13 +28,13 @@ navbar .navbar-fixed {
     position: fixed;
     width: 100%;
 }
-/*navbar .nav li a {
+<!--navbar .nav li a {
     padding: 5px 15.5px;
     text-decoration: none;
 }
-*/
+-->
 </style>
-
+<!--
 <script>
 $(document).ready(function() {
   $(window).scroll(function () {
@@ -51,5 +51,5 @@ $(document).ready(function() {
   });
 });
 </script>
-    
+-->
 </navbar>
