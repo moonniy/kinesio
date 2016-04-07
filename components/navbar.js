@@ -1,34 +1,41 @@
 <navbar>
-  <nav id="nav-bar"class="navbar navbar-default top-navbar">
+  <nav class="navbar navbar-default top-navbar">
     <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <img alt="Kinesiocinesis" src="http://lorempixel.com/image_output/food-q-g-150-60-4.jpg">
+        <a class="navbar-logo" href="#">
+          <img alt="Kinesiocinesis" src="/static/img/logo.png">
         </a>
-      </div>
-      <ul class="nav nav-pills pull-right">
-    <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li>
-      </ul>
+        <ul class="nav nav-pills pull-right">
+          <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li>
+        </ul>
     </div>
   </nav>
 
 <style>
-navbar .navbar{ margin-bottom: 0px; }
-navbar .container{ margin-bottom: 25px }
-navbar .nav {padding-top: 25px;  margin: 0;}
-navbar .navbar-header {
-    height:50px;
-    line-height:100px;
-    color:#fff;
-    font-size:12px;
+navbar .nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
 }
-navbar .navbar-fixed {
+navbar .navbar{
+    margin-bottom: 0px;
+    background-color: #fafafa;
+}
+navbar .container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+navbar .navbar-logo img{
+    max-width: 190px;
+    padding: 20px;
+}
+<!--navbar .navbar-fixed {
     top: 0;
     z-index: 100;
     position: fixed;
     width: 100%;
 }
-<!--navbar .nav li a {
+navbar .nav li a {
     padding: 5px 15.5px;
     text-decoration: none;
 }

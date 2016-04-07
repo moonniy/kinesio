@@ -1,16 +1,16 @@
 <hero>
 <div class="video-container">
-<video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
-<source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
-<source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
-    </video>
+  <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+   <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
+   <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+  </video>
     <div class="description">
-       <h1>Short description of Product</h1>
-       <p>Chocolate cake fruitcake sweet gingerbread.</p>
+        <h1>{ opts.title }</h1>
+        <p>{ opts.description }</p>
     </div>
 </div>
 
-    <style>
+<style>
 
 hero video{
     width: 100%;

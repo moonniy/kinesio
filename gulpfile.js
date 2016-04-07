@@ -1,33 +1,13 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
+var gulp = require('gulp');
+var riot = require('gulp-riot');
+var watchify = require('watchify');
+var source = require('vinyl-source-stream');
 
-// process JS files and return the stream.
-gulp.task('pages', function () {
-    return gulp.src('*.html')
-        .pipe(gulp.dest('dist/'));
-});
-
-gulp.task('components', function () {
-    return gulp.src('components/*.js')
-        .pipe(gulp.dest('dist/components'));
-});
-
-
-// create a task that ensures the `js` task is complete before
-// reloading browsers
-gulp.task('watch', ['components', 'page'], browserSync.reload);
-
-// use default task to launch Browsersync and watch JS files
-gulp.task('serve', ['js'], function () {
-
-    // Serve files from the root of this project
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-
-    // add browserSync.reload to the tasks array to make
-    // all browsers reload after tasks are complete.
-    gulp.watch("js/*.js", ['js-watch']);
+gulp.task('riot', function(){
+    gulp.src('components/*.js')
+	.pipe(riot({
+	    modular:true,
+	    compact:true
+	}))
+	.pipe(gulp.dest('dist'))
 });

@@ -1,0 +1,26 @@
+{
+  "name": "riotjs-kinesio",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://moonniy@bitbucket.org/moonniy/kinesiocinesis.git"
+  },
+  "author": "Monica Benitez",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/moonniy/kinesiocinesis#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-riot": "^0.4.8",
+    "riotify": "^1.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}
