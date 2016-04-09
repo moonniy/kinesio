@@ -22,9 +22,6 @@
         <li><a href="#">
           <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
         </a></li>
-        <li><a href="#">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
-        </a></li>
       </ul>
     </div>
 </div>

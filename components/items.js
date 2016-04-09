@@ -37,15 +37,15 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
 <items>
 <div class ="container">
   <div class="row">
-  <h2>{ opts.title }</h2>
+    <h2>{ opts.title }</h2>
     <div each={ opts.items } class="col-sm-6 col-md-4">
-    <div class="">
-      <img src="{ thumb }" class="img-responsive img-rounded img-thumbnail " alt="...">
-      <div class="caption">
-    <h3>{ title }</h3>
-    <p>{ description }</p>
-      </div>
-    </div>
+        <div class="thumb">
+          <img src="{ thumb }" class="img-responsive img-rounded img-thumbnail " alt="...">
+          <div class="caption">
+            <h3>{ title }</h3>
+            <p>{ description }</p>
+          </div>
+        </div>
     </div>
   </div>
 </div>

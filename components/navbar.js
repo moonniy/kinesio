@@ -26,7 +26,7 @@ navbar .container {
     padding: 5px;
 }
 navbar .navbar-logo img{
-    max-width: 190px;
+    height: 4.3em;
     padding: 20px;
 }
 <!--navbar .navbar-fixed {
