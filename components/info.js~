@@ -1,9 +1,0 @@
-<info>
-<div class ="container">
-    <h2>{ opts.title }</h2>
-    <div each={ opts.description }>
-        <p>{}</p>
-    </div>
-</div>
-
-</info>

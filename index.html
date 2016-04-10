@@ -9,7 +9,7 @@
   <body style="font-family:Sans">
     <navbar></navbar>
     <hero></hero>
-    <info><info>
+    <info></info>
     <items></items>
     <contact></contact>
     <footer></footer>
@@ -17,29 +17,15 @@
     <script src="static/js/jquery.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="static/js/bootstrap.min.js"  crossorigin="anonymous"></script>
-    <!-- incluya riot.js -->
-    <script src="static/js/riot+compiler.min.js"></script>
-    <!-- incluya la etiqueta -->
-    <script src="/components/items.js" type="riot/tag"></script>
-    <script src="/components/info.js" type="riot/tag"></script>
-    <script src="/components/navbar.js" type="riot/tag"></script>
-    <script src="/components/hero.js" type="riot/tag"></script>
-    <script src="/components/contact.js" type="riot/tag"></script>
-    <script src="/components/footer.js" type="riot/tag"></script>
-    <!-- monte la etiqueta -->
-    <script>riot.mount('navbar', { items: [{title: "Home", url: "#", class: "active"}, {title: "Profile", url: "#"}, {title: "Contact", url: "#"}]})</script>
-    <script>riot.mount('hero', {title:"Short description of Product", description:"Chocolate cake fruitcake sweet gingerbread."})</script>
-    <script>riot.mount('contact', { title: "Contacto", name: "LTF. Manuel Gordian", tel: "(222)2710340", phone: "2221581669" })</script>
-    <script>riot.mount('footer')</script>
-    <script>riot.mount('items', { title: "Agentes físicos",
-      items: [{title: "Calor", description: "Jelly-o marshmallow tootsie roll. Fruitcake macaroon I love gummies cake liquorice. Ice cream croissant liquorice marzipan bear claw pie jelly beans pie tootsie roll. Gummi bears I love chocolate cake ice cream fruitcake.", thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"},
-      {title: "Frio", description: "I love lemon drops marzipan chocolate bar fruitcake I love macaroon. Candy candy cotton candy. Oat cake cupcake oat cake donut.Toffee chocolate bonbon cake jelly bear claw. Lollipop tart gummi bears chocolate tart liquorice apple pie. Chupa chups toffee soufflé halvah. Biscuit gummies dessert tiramisu icing pastry. Pie gingerbread I love cake."},
-      {title: "Luz", description: "Toffee chocolate bonbon cake jelly bear claw. Lollipop tart gummi bears chocolate tart liquorice apple pie. Chupa chups toffee soufflé halvah. Biscuit gummies dessert tiramisu icing pastry. Pie gingerbread I love cake. Tart danish topping soufflé ice cream chocolate bar. Cotton candy caramels I love cookie pie chupa chups tiramisu.", thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"},
-      {title: "Agua", description: "Pie gingerbread I love cake. Toffee chocolate bonbon cake jelly bear claw. Lollipop tart gummi tiramisu icing pastry. Tart danish topping soufflé ice cream chocolate bar. Cotton candy caramels I love cookie pie chupa chups tiramisu bears chocolate tart liquorice apple pie. Chupa chups toffee soufflé halvah. Biscuit gummies dessert.", thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"},
-      {title: "Electricidad", description: "Toffee chocolate bonbon cake jelly bear claw. Lollipop tart gummi bears chocolate tart liquorice apple pie. Chupa chups toffee soufflé halvah. Biscuit gummies dessert tiramisu icing pastry. Pie gingerbread I love cake. Tart danish topping soufflé ice cream chocolate bar. Cotton candy caramels I love cookie pie chupa chups tiramisu.", thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"},
-      {title: "Masaje", description: "Tart danish topping soufflé ice cream chocolate bar. Cotton candy caramels I love cookie pie chupa chups tiramisu. Toffee chocolate bonbon cake jelly bear claw. Lollipop tart gummi bears chocolate tart liquorice apple pie. Chupa chups toffee soufflé halvah. Biscuit gummies dessert tiramisu icing pastry. Pie gingerbread I love cake.", thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"}]
-      })</script>
-    <!--
-<script>riot.mount('info', { title: "¿Qué es?", description: "Cheesecake liquorice carrot cake gummi bears jelly-o powder gummies. Caramels donut oat cake pastry gummi bears. Croissant cookie cake apple pie cupcake pastry chocolate bar macaroon bear claw. Donut apple pie cake. Sesame snaps icing chocolate. Jelly danish lollipop jelly. Gingerbread chocolate cake cupcake chocolate cake brownie tootsie roll. Dragée halvah apple pie gummies candy canes candy canes. Liquorice sesame snaps apple pie candy canes cake chocolate.Marzipan apple pie gingerbread biscuit lollipop cookie cupcake bears. Soufflé chocolate bar gummi bears gingerbread donut sugar plum chocolate bar. Sweet wafer toffee croissant ice cream candy macaroon jelly-o candy canes. Macaroon cupcake pie icing apple pie apple pie toffee. Cake cake gummi bears liquorice toffee. Cake muffin pudding tart powder chocolate. Topping cheesecake tart sweet danish pastry cotton candy.Pudding cake sesame snaps chocolate gummi bears sesame snaps dessert wafer. Jelly bear claw toffee sweet roll tart pie liquorice donut. Pastry jelly lemon drops tootsie roll sweet cake icing. Powder marshmallow jelly beans macaroon gingerbread gummi bears. Toffee chocolate ice cream halvah croissant. Candy pastry chocolate cake tiramisu brownie marshmallow.Toffee cake danish oat cake. Lollipop toffee pie cake brownie brownie candy canes. Brownie cookie sweet roll tootsie roll candy cupcake chupa chups. Chocolate cake powder lemon drops cotton candy chocolate. Cookie lollipop sugar plum tiramisu biscuit chocolate bar. Jelly beans bear claw carrot cake sugar."})</script>-->
+  
+    <!--script src="/components/items.js" type="riot/tag"></script>
+    <!-- script src="/components/info.js" type="riot/tag"></script>
+    <!-- script src="/components/navbar.js" type="riot/tag"></script>
+    <!-- script src="/components/hero.js" type="riot/tag"></script>
+    <!-- script src="/components/contact.js" type="riot/tag"></script>
+    <!-- script src="/components/footer.js" type="riot/tag"></script -->
+    
+    <script src="/dist/app.js"></script>
+    
   </body>
 </html>
