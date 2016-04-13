@@ -38,15 +38,20 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
 <div class ="container">
   <div class="row">
     <h2>{ opts.title }</h2>
-    <div each={ opts.items } class="col-sm-6 col-md-4">
+    <virtual each={ element, i in opts.items }>
+    
+      <div if={ ((i + 1) % 4 == 0) && i !== 1 } class="clearfix hidden-md-up"></div>
+      
+      <div class="col-xs-6 col-sm-4">
         <div class="thumb">
-          <img src="{ thumb }" class="img-responsive img-rounded img-thumbnail " alt="..." />
+          <img src="{ element.thumb }" class="img-responsive img-rounded img-thumbnail " alt="..." />
           <div class="caption">
-            <h3>{ title }</h3>
-            <p>{ description }</p>
+            <h3>{ element.title }</h3>
+            <p>{ element.description }</p>
           </div>
         </div>
-    </div>
+      </div>    
+    </virtual>
   </div>
 </div>
 
