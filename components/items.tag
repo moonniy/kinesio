@@ -37,7 +37,7 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
 <items>
 <div class ="container">
   <div class="row">
-    <h2>{ opts.title }</h2>
+    <h3>{ opts.title }</h3>
     <virtual each={ element, i in opts.items }>
     
       <div if={ ((i + 1) % 4 == 0) && i !== 1 } class="clearfix hidden-md-up"></div>
@@ -46,7 +46,7 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
         <div class="thumb">
           <img src="{ element.thumb }" class="img-responsive img-rounded img-thumbnail " alt="..." />
           <div class="caption">
-            <h3>{ element.title }</h3>
+            <h4>{ element.title }</h4>
             <p>{ element.description }</p>
           </div>
         </div>
@@ -65,6 +65,10 @@ items a {
 items .row{
     margin: 25px 25px 25px 25px;
     padding: 15px 15px 15px 15px;
+}
+items .thumb{
+    margin: 10px;
+    height: 570px;
 }
     /** otros estilos específicos a la etiqueta "todo" **/
 </style>

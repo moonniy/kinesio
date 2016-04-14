@@ -1,6 +1,6 @@
 <info>
 <div class ="container">
-    <h2>{ opts.title }</h2>
+    <h3>{ opts.title }</h3>
     <p>{ opts.description }</p>
 </div>
 
