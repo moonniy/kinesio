@@ -10,7 +10,7 @@ var footer = require('./components/footer.tag');
 riot.mount('navbar', { 
     items: [
         {title: "Home", url: "#", class: "active"}, 
-        {title: "Profile", url: "#"}, 
+        {title: "About", url: "#"}, 
         {title: "Contact", url: "#"}]
     });
 
@@ -21,8 +21,8 @@ riot.mount('contact', {
     phone: "2221581669" });
     
 riot.mount('hero', {
-    title:"Short description of Product", 
-    description:"Chocolate cake fruitcake sweet gingerbread."
+    title:"Kinesiocinesis", 
+    description:"Relajate. Disfruta. Sonrie. Sueña. Vive."
 });
         
 
@@ -36,7 +36,7 @@ riot.mount('info', {
 
 
 riot.mount('items', { 
-    title: "Algunas de las técnicas terapéuticas que se realizan son: ",
+    title: "Técnicas terapéuticas",
       items: [
         {
             title: "Masoterapia", 

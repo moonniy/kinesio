@@ -4,6 +4,16 @@
     <p>{ opts.description }</p>
 </div>
 
-    <style>
-    </style>
+
+<style>
+ info h3{
+   font-size: 60px;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
+ info p{
+   font-size: 15px;
+ }
+</style>
 </info>

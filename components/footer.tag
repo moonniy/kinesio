@@ -3,12 +3,6 @@
   <div class="footer-logo">
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
   </div>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Products</a></li>
-    </ul>
-
     <div class="footer-secondary-links">
       <ul>
         <li><a href="#">Terms and Conditions</a></li>
@@ -19,9 +13,6 @@
         <li><a href="#">
           <img src="/static/img/facebook-logo-circle.png" alt="Facebook">
           </a></li>
-        <li><a href="#">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-        </a></li>
       </ul>
     </div>
 </div>

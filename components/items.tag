@@ -62,6 +62,12 @@ items a {
     color:#4b505a
 }
 
+items h3{
+   font-size: 60px;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
 items .row{
     margin: 25px 25px 25px 25px;
     padding: 15px 15px 15px 15px;

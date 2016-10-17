@@ -1,7 +1,7 @@
 <contact>
   <div class="container">
     <div class="info">
-    <h2>{opts.title}</h2>
+    <h3>{opts.title}</h3>
       <ul>
         <li>{ opts.name }</li>
         <li>{ opts.tel }</li>
@@ -17,6 +17,12 @@
 contact .container{
     padding: 20px;
 }
+contact h3{
+   font-size: 60px;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+ } 
 contact .info ul li{
     list-style: none;
     color: #333

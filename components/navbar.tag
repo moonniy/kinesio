@@ -1,20 +1,33 @@
 <navbar>
   <nav class="navbar navbar-default top-navbar">
     <div class="container">
-        <a class="navbar-logo" href="#">
-          <img alt="Kinesiocinesis" src="/static/img/logo.png">
-        </a>
-        <ul class="nav nav-pills pull-right">
+        <a class="navbar-logo" href="#">Kinesiocinesis</a>
+        <ul class="list-inline pull-right">
           <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li>
         </ul>
     </div>
   </nav>
 
 <style>
-navbar .nav {
-    padding-top: 10px;
+navbar .list-inline {
+    padding-top: 30px;
     padding-bottom: 10px;
     margin: 0;
+}
+navbar .list-inline li {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+navbar .list-inline>li.active a{
+    color: #02b8bf; 
+}
+navbar .list-inline>li a{
+    color: #333333;
+    text-decoration: none;
+}
+navbar li a:hover{
+    color: #02b8bf;
+    transition: .20s;
 }
 navbar .navbar{
     margin-bottom: 0px;
@@ -25,20 +38,20 @@ navbar .container {
     margin-bottom: 15px;
     padding: 5px;
 }
-navbar .navbar-logo img{
-    height: 4.3em;
-    padding: 20px;
+a.navbar-logo {
+    text-decoration: none;
+    font-size: 34px;
+    padding-top: 10px;
+    color: #116089;
 }
+
 <!--navbar .navbar-fixed {
     top: 0;
     z-index: 100;
     position: fixed;
     width: 100%;
 }
-navbar .nav li a {
-    padding: 5px 15.5px;
-    text-decoration: none;
-}
+<img alt="Kinesiocinesis" src="/static/img/logo.png">
 -->
 </style>
 <!--
