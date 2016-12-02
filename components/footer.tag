@@ -20,7 +20,7 @@
 <style>
 
 footer .footer-2 {
-  background: gray;
+  background-color: #F2F2F2;
   padding: 1.5em;
   width: 100%;
   display: inline-block;

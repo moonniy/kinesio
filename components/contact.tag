@@ -18,6 +18,7 @@ contact .container-fluid{
     padding: 20px;
     padding-left: 187px;
     padding-right: 187px;
+    background-color: #fafafa;
 }
 contact h3{
    font-size: 60px;

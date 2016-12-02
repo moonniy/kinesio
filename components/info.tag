@@ -9,6 +9,7 @@
 info .container-fluid{
     padding-left: 187px;
     padding-right: 187px;
+    background-color: #fafafa;	
 }
  info h3{
    font-size: 60px;

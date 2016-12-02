@@ -59,6 +59,7 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
 items .container-fluid{
     padding-left: 187px;
     padding-right: 187px;
+    background-color: #0D5777;
 }
 items a {
     transition: all 0.2s ease-out;
