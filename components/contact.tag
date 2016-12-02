@@ -1,5 +1,5 @@
 <contact>
-  <div class="container">
+  <div class="container-fluid">
     <div class="info">
     <h3>{opts.title}</h3>
       <ul>
@@ -14,8 +14,10 @@
     </div>
   </div>
 <style>
-contact .container{
+contact .container-fluid{
     padding: 20px;
+    padding-left: 187px;
+    padding-right: 187px;
 }
 contact h3{
    font-size: 60px;

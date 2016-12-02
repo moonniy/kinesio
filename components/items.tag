@@ -35,7 +35,7 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
 
 */
 <items>
-<div class ="container">
+<div class ="container-fluid">
   <div class="row">
     <h3>{ opts.title }</h3>
     <virtual each={ element, i in opts.items }>
@@ -56,7 +56,10 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
 </div>
 
 <style>
-
+items .container-fluid{
+    padding-left: 187px;
+    padding-right: 187px;
+}
 items a {
     transition: all 0.2s ease-out;
     color:#4b505a

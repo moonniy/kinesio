@@ -31,12 +31,16 @@ hero .video-container .description{
 }
 
 hero h1{
-    font-size: 60px;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 6px;
     color: #eee;
 }
 
 hero p{
     font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
     color: #efefef;
 }
 

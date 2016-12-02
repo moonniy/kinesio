@@ -1,11 +1,15 @@
 <info>
-<div class ="container">
+<div class ="container-fluid">
     <h3>{ opts.title }</h3>
     <p>{ opts.description }</p>
 </div>
 
 
 <style>
+info .container-fluid{
+    padding-left: 187px;
+    padding-right: 187px;
+}
  info h3{
    font-size: 60px;
    text-align: center;
