@@ -19,8 +19,9 @@ hero video{
 hero .video-container{
     position: relative;
     text-align: center;
-    display: inline-block;
     width: 100%;
+    height: 600px;
+    overflow: hidden;
 }
 
 hero .video-container .description{
@@ -34,14 +35,14 @@ hero h1{
     font-size: 80px;
     font-weight: bold;
     letter-spacing: 6px;
-    color: #eee;
+    color: #fff;
 }
 
 hero p{
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 3px;
-    color: #efefef;
+    color: #fff;
 }
 
 </style>
