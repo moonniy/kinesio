@@ -36,7 +36,6 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
 */
 <items>
 <div class ="container-fluid">
-  <div class="row">
     <h3>{ opts.title }</h3>
     <virtual each={ element, i in opts.items }>
     
@@ -52,7 +51,6 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
         </div>
       </div>    
     </virtual>
-  </div>
 </div>
 
 <style>
@@ -60,6 +58,8 @@ items .container-fluid{
     padding-left: 187px;
     padding-right: 187px;
     background-color: #0D5777;
+    padding-top: 56px;
+    padding-bottom: 90px;
 }
 items a {
     transition: all 0.2s ease-out;
@@ -69,13 +69,19 @@ items a {
 items h3{
    font-size: 60px;
    text-align: center;
-   margin-top: 50px;
    margin-bottom: 50px;
+   font-weight: bold;
+   color: #fff;
 }
-items .row{
-    margin: 25px 25px 25px 25px;
-    padding: 15px 15px 15px 15px;
+
+items h4{
+   color: #fff;
 }
+
+items p{
+   color: #fff;
+}
+
 items .thumb{
     margin: 10px;
     height: 570px;
