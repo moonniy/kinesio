@@ -17,6 +17,7 @@ hero video{
     position: fixed;
     left: 0;
     z-index: -1;
+    top: 0;
 }
 
 hero .video-container{
