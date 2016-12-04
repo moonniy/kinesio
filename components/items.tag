@@ -38,29 +38,33 @@ items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active
 <div class ="container-fluid">
     <h3>{ opts.title }</h3>
     <virtual each={ element, i in opts.items }>
-    
-      <div if={ ((i + 1) % 4 == 0) && i !== 1 } class="clearfix hidden-md-up"></div>
-      
-      <div class="col-xs-6 col-sm-4">
-        <div class="thumb">
-          <img src="{ element.thumb }" class="img-responsive img-rounded img-thumbnail " alt="..." />
-          <div class="caption">
+      <div class="col col-xs-6 col-sm-5">
             <h4>{ element.title }</h4>
             <p>{ element.description }</p>
-          </div>
-        </div>
       </div>    
     </virtual>
 </div>
 
 <style>
 items .container-fluid{
-    padding-left: 187px;
-    padding-right: 187px;
-    background-color: #0D5777;
+    padding-left: 183px;
+    padding-right: 183px;
+    background: linear-gradient(rgba(13, 87, 119, 0.90),
+                rgba(13, 87, 119, 0.90)),
+		url(http://clinicaciudaddejaen.es/img/010.jpg) no-repeat center;
     padding-top: 56px;
-    padding-bottom: 90px;
+    padding-bottom: 157px;
 }
+
+items div .col{
+    background-color: rgba(255,255,255,0.1);
+    margin-top: 2%;
+    margin-left: 2%;
+    height: 260px;
+    width: 48%;
+    padding: 30px 40px 20px 40px;
+}
+
 items a {
     transition: all 0.2s ease-out;
     color:#4b505a
@@ -76,10 +80,17 @@ items h3{
 
 items h4{
    color: #fff;
+   letter-spacing: 0.1em;
+   font-size: 24px;
+   text-align: center;
 }
 
 items p{
    color: #fff;
+   margin-top: 30px;
+   text-align: center;
+   overflow: hidden;
+   height: 120px;
 }
 
 items .thumb{
