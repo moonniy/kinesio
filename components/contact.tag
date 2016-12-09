@@ -15,16 +15,18 @@
   </div>
 <style>
 contact .container-fluid{
-    padding: 20px;
     padding-left: 187px;
     padding-right: 187px;
+    padding-top: 56px;
+    padding-bottom: 90px;
     background-color: #fafafa;
 }
 contact h3{
    font-size: 60px;
    text-align: center;
-   margin-top: 50px;
-   margin-bottom: 50px;
+   margin-bottom: 70px;
+   font-weight: bold;
+   color: #02b8bf;
  } 
 contact .info ul li{
     list-style: none;
