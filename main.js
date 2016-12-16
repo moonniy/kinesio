@@ -18,7 +18,10 @@ riot.mount('contact', {
     title: "Contacto", 
     name: "LTF. Manuel Gordian", 
     tel: "(222)2710340", 
-    phone: "2221581669" });
+    phone: "2221581669",
+    direccion: "Calle 4 poniente 705, San Miguel, 72990, Amozoc de Mota, Puebla.",
+    horario1: "Lunes a Viernes 10:00 a.m. a 18:00 p.m.",
+    horario2: "Sabados 10:00 a.m. a 14:00 p.m."});
     
 riot.mount('hero', {
     title:"Kinesiocinesis", 
