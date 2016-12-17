@@ -56,31 +56,5 @@ a.navbar-logo {
     letter-spacing: 1px;
 }
 
-<!--navbar .navbar-fixed {
-    top: 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-}
-<img alt="Kinesiocinesis" src="/static/img/logo.png">
--->
 </style>
-<!--
-<script>
-$(document).ready(function() {
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the 
-      //nav bar to stick.  
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 0) {
-      $('#nav-bar').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 1) {
-      $('#nav-bar').removeClass('navbar-fixed');
-    }
-  });
-});
-</script>
--->
 </navbar>
