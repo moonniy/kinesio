@@ -45,32 +45,32 @@ riot.mount('items', {
         {
             title: "Masoterapia", 
             description: "Terapia basada en la aplicación de las manos por medio de técnicas de rehabilitación, digitopuntura o digitopresión, masaje profundo, manipulaciones movilizaciones articulares, estiramientos y tracciones. Se deberá evitar su aplicación en pacientes con fracturas, artritis reumatoide, osteoporosis, entre otras.", 
-            thumb: "/static/img/masoterapia.png"
+            thumb: "static/img/masoterapia.png"
             
         },
         {
             title: "Electroterapia", 
             description: "Es la aplicación de la electricidad mediante electrodos, y cabezales,  devera evitrse sus aplicacion en pacientes que presenten infecciones o inflamaciones de la piel, cardiopatías y en mujeres embarazadas.",
-            thumb: "/static/img/electroterapia.png"
+            thumb: "static/img/electroterapia.png"
         },
         {
             title: "Termoterapia", 
             description: "En la aplicación de termoterapia se debe un calor intenso, pero siempre agradable, y efecto relajante que  se mantiene durante toda la aplicación, que generalmente varia entre 10-30 minutos, aunque esto depende de la técnica que se utilice. Se aplica por ejemplo en las cervicales o la espalda. ", 
-            thumb: "/static/img/termoterapia.png"
+            thumb: "static/img/termoterapia.png"
         },
         {
             title: "Crioterapia", 
             description: "Basada en la aplicación del frio sobre el organismo. Esta técnica  se aplica de 10 a 15 minutos, no se debe usar como medida terapéutica en pacientes con enfermedades cardíacas y problemas vasculares, diabetes, alteraciones sensoriales, síndrome de Raynaud, urticaria, alergia o hipersensibilidad al frio y enfermedades renales o viscerales.", 
-            thumb: "/static/img/crioterapia.png"
+            thumb: "static/img/crioterapia.png"
         },
         {
             title: "Ultrasonoterapia", 
             description: "Terapia a través de sonidos  “ondas mecánicas”, se utiliza como tratamiento de dolores profundos en cuello o espalda, lesiones de tendones y ligamentos,  espasmos o contracturas musculares, los problemas articulares y enfermedades relacionadas con la columna vertebral, aumenta el metabolismo, disminuye dolor relaja y ayuda a la cicatrización. ", 
-            thumb: "/static/img/ultrasonoterapia.png"
+            thumb: "static/img/ultrasonoterapia.png"
         },
         {
             title: "Hidroterapia", 
             description: "Es la utilización terapéutica del agua y se aplica en diversos escenarios como  balnearios, saunas, piscinas termales, duchas, chorros de agua y tinas de remolino con características específicas. Sirve para los tratamientos de varias enfermedades, ayuda al equilibrio eliminando la gravedad en el caso de las piscinas y fortalece la musculatura, debido a que el agua es mas pesada que el aire, ayuda a reducir lesiones y trastornos, dismunuye el estrés y la ansiedad, estimula el sistema inmunitario, produce alivio muscular en contracturas, lumbalgias  y tendinitis. ", 
-            thumb: "/static/img/hidroterapia.png"
+            thumb: "static/img/hidroterapia.png"
         }]
       });
