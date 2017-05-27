@@ -4,7 +4,8 @@
     <virtual each={ element, i in opts.items }>
       <div class="col col-xs-6 col-sm-5">
             <h4>{ element.title }</h4>
-            <p>{ element.description }</p>
+            <img src="{element.thumb}">
+	    
       </div>    
     </virtual>
 </div>
@@ -16,7 +17,7 @@ items .container-fluid{
     background: linear-gradient(rgba(13, 87, 119, 0.90),
                 rgba(13, 87, 119, 0.90)),
 		url(http://clinicaciudaddejaen.es/img/010.jpg) no-repeat center;
-    padding-top: 56px;
+    padding-top: 40px;
     padding-bottom: 157px;
 }
 
@@ -24,7 +25,7 @@ items div .col{
     background-color: rgba(255,255,255,0.1);
     margin-top: 2%;
     margin-left: 2%;
-    height: 260px;
+    height: 240px;
     width: 48%;
     padding: 30px 40px 20px 40px;
 }
@@ -57,21 +58,12 @@ items p{
    height: 120px;
 }
 
-items .thumb{
-    margin: 10px;
-    height: 570px;
+items img{
+    height: 7em;
+    margin: 30px auto;
+    display: block;
 }
     /** otros estilos específicos a la etiqueta "todo" **/
 </style>
 
-  <script>
-    console.log(typeof this.opts.items);
-    for (i=0; i<this.opts.items.length; i++) {
-	if(!(this.opts.items[i].thumb)) {
-            this.opts.items[i].thumb = "http://www.jackrusselltr.com/wp-content/uploads/2014/12/yavru-pug-mops.jpg";
-	}
-    }
-
-	
-  </script>
 </items>

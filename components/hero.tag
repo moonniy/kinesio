@@ -1,8 +1,8 @@
 <hero>
 <div class="video-container">
-  <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
-   <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
-   <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+  <video autoplay  poster="/static/video/Puzzling.jpg" id="bgvid" loop>
+   <source src="/static/video/Puzzling.webm" type="video/webm">
+   <source src="/static/video/Puzzling.mp4" type="video/mp4">
   </video>
     <div class="description">
         <h1>{ opts.title }</h1>

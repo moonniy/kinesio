@@ -1,147 +1,31 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('contact', '<div class="container"> <div class="info"> <h3>{opts.title}</h3> <ul> <li>{opts.name}</li> <li>{opts.tel}</li> <li>{opts.phone}</li> </ul> </div> <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.394658475166!2d-98.04803516907432!3d19.04637804841881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfeb62eb1b52f9%3A0x1ad412546408e66f!2sCalle+4+Pte.+705%2C+San+Miguel%2C+72990+Amozoc+de+Mota%2C+Pue.!5e0!3m2!1ses-419!2smx!4v1457481430673" width="700" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> </div> </div>', 'contact .container{ padding: 20px; } contact h3{ font-size: 60px; text-align: center; margin-top: 50px; margin-bottom: 50px; } contact .info ul li{ list-style: none; color: #333 } contact .map{ width: 100%; }', '', function(opts) {
+module.exports = riot.tag2('contact', '<div class="container-fluid"> <div class="info"> <h3>{opts.title}</h3> <div class="col-sm-6 col"> <h4>Dirección</h4> <ul> <li>{opts.name}</li> <li>{opts.tel} / {opts.phone}</li> <li>{opts.direccion}</li> </ul> </div> <div class="col-sm-6 col"> <h4>Horarios</h4> <ul> <li>{opts.horario1}</li> <li>{opts.horario2}</li> </ul> </div> </div> <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.394658475166!2d-98.04803516907432!3d19.04637804841881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfeb62eb1b52f9%3A0x1ad412546408e66f!2sCalle+4+Pte.+705%2C+San+Miguel%2C+72990+Amozoc+de+Mota%2C+Pue.!5e0!3m2!1ses-419!2smx!4v1457481430673" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> </div> </div>', 'contact .container-fluid{ padding-left: 187px; padding-right: 187px; padding-top: 40px; padding-bottom: 90px; background-color: #fafafa; } contact h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #02b8bf; } contact h4{ font-size: 23px; margin-bottom: 20px; text-align: center; letter-spacing: 2px; font-weight: bold; } contact div .col{ display:inline-block; text-align: center; } contact div .col ul{ padding: 0; margin-bottom: 50px; } contact .info ul li{ list-style: none; color: #333; letter-spacing: 1px; padding-bottom: 5px; } contact .map{ width: 80%; margin-left: auto; margin-right: auto; }', '', function(opts) {
 });
-/**
-
-
-
-
-
-
-riot.tag2('div', '', '', 'id="map_canvas"', function(opts) {
-});
-
-
-riot.tag2('style', '', '', '', function(opts) {
-#map_canvas {
-  height: 400px;
-  width: 100%;
-}
-
-#map_canvas img {
-  max-width: none;
-}
-
-#map_canvas .content {
-  padding: 0 0.5em 1em 0.5em;
-}
-
-#map_canvas .firstHeading {
-  font-size: 1em;
-  line-height: 1em;
-  font-weight: bold;
-  margin: 0;
-}
-
-#map_canvas #bodyContent p {
-  font-size: 1em;
-  margin: 0;
-}
-
-});
-**/
 
 },{"riot":8}],2:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('footer', '<div class="footer-2" role="contentinfo"> <div class="footer-logo"> <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image"> </div> <div class="footer-secondary-links"> <ul> <li><a href="#">Terms and Conditions</a></li> <li><a href="#">Privacy Policy</a></li> </ul> <ul class="footer-social"> <li><a href="#"> <img src="/static/img/facebook-logo-circle.png" alt="Facebook"> </a></li> </ul> </div> </div>', 'footer .footer-2 { background: gray; padding: 1.5em; width: 100%; display: inline-block; } footer .footer-logo { margin-right: 1em; margin-bottom: 1em; float: left; margin-bottom: 0; } footer .footer-logo img { height: 1.6em; } footer ul { line-height: 1.5em; margin: 0 0 1em 0; padding: 0; float: left; line-height: 1.8em; margin-left: 1em; margin-bottom: 0; } footer ul li { list-style: none; padding-right: 1em; display: inline; text-align: left; } footer ul li a { color: white; text-decoration: none; } footer ul, li, a:hover { color: rgba(0,0,0,0.4); } footer .footer-secondary-links { float: right; } footer .footer-secondary-links li { font-size: 0.8em; } footer .footer-secondary-links ul.footer-social { margin: 1em 0 0 0; float: right; margin-top: 0; } footer .footer-secondary-links li { font-size: 1em; float: left; margin: 0; padding-right: 0.7em; } footer .footer-secondary-links img { height: 1.6em; opacity: 0.7; padding: 1px; }', '', function(opts) {
+module.exports = riot.tag2('footer', '<div class="footer" role="contentinfo"> <div class="footer-logo"> <img id="tl" src="/static/img/logo.png" alt="Fisiobalance"> <a href="#"> <img id="fb" src="/static/img/facebook-logo-circle.png" alt="Facebook"> </a> <a href="#"> <img id="wp" src="/static/img/whatsapp.png" alt="whatsapp"> </a> </div> <div class="footer-secondary"> <p><a href="#">Desarrollado por Kaltia</a></p> </div> </div>', 'footer .footer { background-color: #F2F2F2; padding-top: 60px; width: 100%; display: inline-block; position: absolute; text-align: center; height: 200px; } footer .footer-logo { margin-right: 1em; float: left; margin-bottom: 15px; display: block; width: 100%; } footer .footer-logo img#tl { height: 1em; } footer .footer-logo img#fb, img#wp { height: 2.0em; opacity: 0.7; padding: 1px; margin-left: 20px; } footer .footer-secondary{ font-size: 0.8em; }', '', function(opts) {
 });
 
 },{"riot":8}],3:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('hero', '<div class="video-container"> <video autoplay poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop> <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm"> <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4"> </video> <div class="description"> <h1>{opts.title}</h1> <p>{opts.description}</p> </div> </div>', 'hero video{ width: 100%; } hero .video-container{ position: relative; text-align: center; display: inline-block; width: 100%; } hero .video-container .description{ position: absolute; top: 25%; z-index: 2; width: 100%; } hero h1{ font-size: 60px; color: #eee; } hero p{ font-size: 30px; color: #efefef; }', '', function(opts) {
+module.exports = riot.tag2('hero', '<div class="video-container"> <video autoplay poster="/static/video/Puzzling.jpg" id="bgvid" loop> <source src="/static/video/Puzzling.webm" type="video/webm"> <source src="/static/video/Puzzling.mp4" type="video/mp4"> </video> <div class="description"> <h1>{opts.title}</h1> <p>{opts.description}</p> </div> </div>', 'hero video{ width: 100%; position: fixed; left: 0; z-index: -1; top: 0; } hero .video-container{ position: relative; text-align: center; width: 100%; height: 600px; overflow: hidden; } hero .video-container .description{ position: absolute; top: 25%; z-index: 2; width: 100%; } hero h1{ font-size: 80px; font-weight: bold; letter-spacing: 6px; color: #fff; } hero p{ font-size: 30px; font-weight: bold; letter-spacing: 3px; color: #fff; }', '', function(opts) {
 });
 
 },{"riot":8}],4:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('info', '<div class="container"> <h3>{opts.title}</h3> <p>{opts.description}</p> </div>', 'info h3{ font-size: 60px; text-align: center; margin-top: 50px; margin-bottom: 50px; } info p{ font-size: 15px; }', '', function(opts) {
+module.exports = riot.tag2('info', '<div class="container-fluid"> <h3>{opts.title}</h3> <p>{opts.description}</p> </div>', 'info .container-fluid{ padding-left: 187px; padding-right: 187px; background-color: #fafafa; padding-top: 40px; padding-bottom: 90px; } info h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #02b8bf; } info p{ font-size: 1.3em; text-align: center; letter-spacing: 2px; line-height: 1.7em; }', '', function(opts) {
 });
 
 },{"riot":8}],5:[function(require,module,exports){
 var riot = require('riot');
-module.exports = /*Monocromatico
-#BAEAD6
-#70ce9b
-*/
-
-
-/*
-items body {
-    font-family: "Open Sans", sans-serif;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    color: #4b505a;
-    background-color: #f5f5f5;
-    line-height: 24px;
-        -webkit-font-smoothing:antialiased;
-    text-rendering: optimizeLegibility;
-}
-items .navbar-header.nav{ float:right; }
-items .navbar-header .nav a{
-    color:#fff;
-    text-decoration:none;
-    padding:8px;
-    margin-left:20px;
-    transition: all 0.3s ease-out;
-}
-items .navbar-header .nav a:hover{
-    color:#fff;
-    opacity: 1;
-    background-color: rgba(0,0,0,0.2);
-}
-items .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-    color:#fff;
-    background-color: rgba(0,0,0,0.2);
-}
-
-*/
-riot.tag2('items', '<div class="container"> <div class="row"> <h3>{opts.title}</h3> <virtual each="{element, i in opts.items}"> <div if="{((i + 1) % 4 == 0) && i !== 1}" class="clearfix hidden-md-up"></div> <div class="col-xs-6 col-sm-4"> <div class="thumb"> <img riot-src="{element.thumb}" class="img-responsive img-rounded img-thumbnail " alt="..."> <div class="caption"> <h4>{element.title}</h4> <p>{element.description}</p> </div> </div> </div> </virtual> </div> </div>', 'items a { transition: all 0.2s ease-out; color:#4b505a } items h3{ font-size: 60px; text-align: center; margin-top: 50px; margin-bottom: 50px; } items .row{ margin: 25px 25px 25px 25px; padding: 15px 15px 15px 15px; } items .thumb{ margin: 10px; height: 570px; }', '', function(opts) {
-    console.log(typeof this.opts.items);
-    for (i=0; i<this.opts.items.length; i++) {
-	if(!(this.opts.items[i].thumb)) {
-            this.opts.items[i].thumb = "http://www.jackrusselltr.com/wp-content/uploads/2014/12/yavru-pug-mops.jpg";
-	}
-    }
-
+module.exports = riot.tag2('items', '<div class="container-fluid"> <h3>{opts.title}</h3> <virtual each="{element, i in opts.items}"> <div class="col col-xs-6 col-sm-5"> <h4>{element.title}</h4> <img riot-src="{element.thumb}"> </div> </virtual> </div>', 'items .container-fluid{ padding-left: 183px; padding-right: 183px; background: linear-gradient(rgba(13, 87, 119, 0.90), rgba(13, 87, 119, 0.90)), url(http://clinicaciudaddejaen.es/img/010.jpg) no-repeat center; padding-top: 40px; padding-bottom: 157px; } items div .col{ background-color: rgba(255,255,255,0.1); margin-top: 2%; margin-left: 2%; height: 240px; width: 48%; padding: 30px 40px 20px 40px; } items a { transition: all 0.2s ease-out; color:#4b505a } items h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #fff; } items h4{ color: #fff; letter-spacing: 0.1em; font-size: 24px; text-align: center; } items p{ color: #fff; margin-top: 30px; text-align: center; overflow: hidden; height: 120px; } items img{ height: 7em; margin: 30px auto; display: block; }', '', function(opts) {
 });
-/*
-items a, a:visited { 
-    color: #eb234; 
-    text-decoration: none; 
-    transition: all 0.2s ease-out;
-}
-items a:hover, a:active{ 
-    text-decoration:underline; 
-    color:#eb2344; 
-//    opacity: 0.8;
-}
-
-items a.navigate{
-    background-color: rgba(0,0,0,0.5);
-    font-size: 12px;
-    padding-left: 4px;
-    padding-right: 4px;
-    min-width: 100px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    color:#fff;
-    text-decoration: none;
-}
-items a.navigate:hover{
-    opacity: 0.8;
-}
-
-items a.more{
-    font-size: 12px;
-    margin-top: 30px;
-}
-
-*/
 
 },{"riot":8}],6:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('navbar', '<nav class="navbar navbar-default top-navbar"> <div class="container"> <a class="navbar-logo" href="#">Kinesiocinesis</a> <ul class="list-inline pull-right"> <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li> </ul> </div> </nav>', 'navbar .list-inline { padding-top: 30px; padding-bottom: 10px; margin: 0; } navbar .list-inline li { padding-right: 30px; padding-left: 30px; } navbar .list-inline>li.active a{ color: #02b8bf; } navbar .list-inline>li a{ color: #333333; text-decoration: none; } navbar li a:hover{ color: #02b8bf; transition: .20s; } navbar .navbar{ margin-bottom: 0px; background-color: #fafafa; } navbar .container { margin-top: 15px; margin-bottom: 15px; padding: 5px; } a.navbar-logo { text-decoration: none; font-size: 34px; padding-top: 10px; color: #116089; }', '', function(opts) {
+module.exports = riot.tag2('navbar', '<nav class="navbar navbar-default top-navbar"> <div class="container-fluid"> <a class="navbar-logo" href="#">Fisiobalance</a> <ul class="list-inline"> <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li> </ul> </div> </nav>', 'navbar .list-inline { padding-top: 30px; padding-bottom: 10px; margin: 0; display: inline-block; position: absolute; right: 0; } navbar .list-inline li { padding-right: 30px; padding-left: 30px; } navbar .list-inline>li.active a{ color: #02b8bf; } navbar .list-inline>li a{ color: #333333; text-decoration: none; } navbar a{ font-size: 15px; } navbar li a:hover{ color: #02b8bf; transition: .20s; } navbar .navbar{ margin-bottom: 0px; background-color: #fafafa; } navbar .container-fluid { margin-top: 20px; margin-bottom: 70px; padding: 5px; margin-left: 187px; margin-right: 187px; position: relative; } a.navbar-logo { text-decoration: none; font-size: 31px; padding-top: 10px; color: #116089; position:absolute; letter-spacing: 1px; }', '', function(opts) {
 });
 
 },{"riot":8}],7:[function(require,module,exports){
@@ -156,20 +40,24 @@ var footer = require('./components/footer.tag');
 
 riot.mount('navbar', { 
     items: [
-        {title: "Home", url: "#", class: "active"}, 
-        {title: "About", url: "#"}, 
-        {title: "Contact", url: "#"}]
+        {title: "Inicio", url: "#", class: "active"}, 
+        {title: "¿Qué es?", url: "#"}, 
+	{title: "Técnicas terapéuticas", url:"#"},
+        {title: "Contacto", url: "#"}]
     });
 
 riot.mount('contact', { 
     title: "Contacto", 
-    name: "LTF. Manuel Gordian", 
+    name: "LTF. Manuel Gordian Sánchez", 
     tel: "(222)2710340", 
-    phone: "2221581669" });
+    phone: "2221581669",
+    direccion: "Calle 4 poniente 705, San Miguel, 72990, Amozoc de Mota, Puebla.",
+    horario1: "Lunes a Viernes 10:00 a.m. a 18:00 p.m.",
+    horario2: "Sabados 10:00 a.m. a 14:00 p.m."});
     
 riot.mount('hero', {
-    title:"Kinesiocinesis", 
-    description:"Relajate. Disfruta. Sonrie. Sueña. Vive."
+    title:"Fisiobalance", 
+    description:"Terapia física y rehabilitación"
 });
         
 
@@ -178,7 +66,7 @@ riot.mount('footer');
 
 riot.mount('info', { 
     title: "¿Qué es?", 
-    description: "La fisioterapia es una disciplina de la salud que consiste en curar, prevenir, tratar enfermedades y síntomas, tanto agudas como crónicas, a través del ejercicio terapéutico, técnicas de masaje y otros elementos. Se puede intervenir en procesos patológicos dentro de especialidades médicas como alternativas de prevención y curación.La principal herramienta empleada en esta disciplina es la mano, y alguna de las tareas que se realizan son los masajes, estiramientos y otros ejercicios físicos que tienen el propósito de corregir la postura, mejorar el control motor, etc. Aunque la fisioterapia también confía en otros elementos y tecnología para el óptimo estado general de la salud."
+    description: "La fisioterapia es una disciplina de la salud que previene, cura y trata enfermedades así como sus síntomas, a través del ejercicio terapéutico. Algunas tareas que se realizan son los masajes, estiramientos y ejercicios físicos, también se utilizan otros agentes físicos con el uso de la tecnología."
 });
 
 
@@ -188,33 +76,33 @@ riot.mount('items', {
         {
             title: "Masoterapia", 
             description: "Terapia basada en la aplicación de las manos por medio de técnicas de rehabilitación, digitopuntura o digitopresión, masaje profundo, manipulaciones movilizaciones articulares, estiramientos y tracciones. Se deberá evitar su aplicación en pacientes con fracturas, artritis reumatoide, osteoporosis, entre otras.", 
-            thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"
+            thumb: "/static/img/masoterapia.png"
             
         },
         {
             title: "Electroterapia", 
             description: "Es la aplicación de la electricidad mediante electrodos, y cabezales,  devera evitrse sus aplicacion en pacientes que presenten infecciones o inflamaciones de la piel, cardiopatías y en mujeres embarazadas.",
-            thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"
+            thumb: "/static/img/electroterapia.png"
         },
         {
             title: "Termoterapia", 
             description: "En la aplicación de termoterapia se debe un calor intenso, pero siempre agradable, y efecto relajante que  se mantiene durante toda la aplicación, que generalmente varia entre 10-30 minutos, aunque esto depende de la técnica que se utilice. Se aplica por ejemplo en las cervicales o la espalda. ", 
-            thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"
+            thumb: "/static/img/termoterapia.png"
         },
         {
             title: "Crioterapia", 
             description: "Basada en la aplicación del frio sobre el organismo. Esta técnica  se aplica de 10 a 15 minutos, no se debe usar como medida terapéutica en pacientes con enfermedades cardíacas y problemas vasculares, diabetes, alteraciones sensoriales, síndrome de Raynaud, urticaria, alergia o hipersensibilidad al frio y enfermedades renales o viscerales.", 
-            thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"
+            thumb: "/static/img/crioterapia.png"
         },
         {
             title: "Ultrasonoterapia", 
             description: "Terapia a través de sonidos  “ondas mecánicas”, se utiliza como tratamiento de dolores profundos en cuello o espalda, lesiones de tendones y ligamentos,  espasmos o contracturas musculares, los problemas articulares y enfermedades relacionadas con la columna vertebral, aumenta el metabolismo, disminuye dolor relaja y ayuda a la cicatrización. ", 
-            thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"
+            thumb: "/static/img/ultrasonoterapia.png"
         },
         {
             title: "Hidroterapia", 
             description: "Es la utilización terapéutica del agua y se aplica en diversos escenarios como  balnearios, saunas, piscinas termales, duchas, chorros de agua y tinas de remolino con características específicas. Sirve para los tratamientos de varias enfermedades, ayuda al equilibrio eliminando la gravedad en el caso de las piscinas y fortalece la musculatura, debido a que el agua es mas pesada que el aire, ayuda a reducir lesiones y trastornos, dismunuye el estrés y la ansiedad, estimula el sistema inmunitario, produce alivio muscular en contracturas, lumbalgias  y tendinitis. ", 
-            thumb: "https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg"
+            thumb: "/static/img/hidroterapia.png"
         }]
       });
 

@@ -1,8 +1,13 @@
 <footer>
 <div class="footer" role="contentinfo">
   <div class="footer-logo">
-    <img id="tl" src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Kinesiocinesis">
+    <img id="tl" src="/static/img/logo.png" alt="Fisiobalance">
+    <a href="#">
     <img id="fb" src="/static/img/facebook-logo-circle.png" alt="Facebook">
+    </a>
+    <a href="#">
+    <img id="wp" src="/static/img/whatsapp.png" alt="whatsapp">
+    </a>
   </div>
   <div class="footer-secondary">
      <p><a href="#">Desarrollado por Kaltia</a></p>
@@ -28,10 +33,10 @@ footer .footer-logo {
     width: 100%;
 }
 footer .footer-logo img#tl {
-    height: 1.6em;
+    height: 1em;
 }
 
-footer .footer-logo img#fb {
+footer .footer-logo img#fb, img#wp {
     height: 2.0em;
     opacity: 0.7;
     padding: 1px;

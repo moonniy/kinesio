@@ -10,7 +10,7 @@ info .container-fluid{
     padding-left: 187px;
     padding-right: 187px;
     background-color: #fafafa;
-    padding-top: 56px;
+    padding-top: 40px;
     padding-bottom: 90px;
 }
  info h3{
@@ -21,9 +21,10 @@ info .container-fluid{
    color: #02b8bf;
  }
  info p{
-   font-size: 1em;
-   letter-spacing: 1.5px;
-   line-height: 1.5em;
+   font-size: 1.3em;
+   text-align: center;
+   letter-spacing: 2px;
+   line-height: 1.7em;
  }
 </style>
 </info>

@@ -1,7 +1,7 @@
 <navbar>
   <nav class="navbar navbar-default top-navbar">
     <div class="container-fluid">
-        <a class="navbar-logo" href="#">Kinesiocinesis</a>
+        <a class="navbar-logo" href="#">Fisiobalance</a>
         <ul class="list-inline">
           <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li>
         </ul>
@@ -40,7 +40,7 @@ navbar .navbar{
     background-color: #fafafa;
 }
 navbar .container-fluid {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 70px;
     padding: 5px;
     margin-left: 187px;

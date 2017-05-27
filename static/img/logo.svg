@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="147.45599mm"
+   width="126.61045mm"
    height="16.583267mm"
-   viewBox="0 0 522.48187 58.759608"
+   viewBox="0 0 448.61971 58.759608"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="logo.svg">
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/dori/Documentos/kinesio/static/img/logo.png"
+   inkscape:export-xdpi="90.099998"
+   inkscape:export-ydpi="90.099998">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="292.96413"
-     inkscape:cy="30.485907"
+     inkscape:cx="246.05187"
+     inkscape:cy="22.404677"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,19 +59,19 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(532.24984,-509.80279)">
+     transform="translate(532.57995,-509.80279)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:84.5082016px;line-height:125%;font-family:'WenQuanYi Zen Hei';-inkscape-font-specification:'WenQuanYi Zen Hei Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:'WenQuanYi Zen Hei';-inkscape-font-specification:'WenQuanYi Zen Hei Medium';letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="-539.51227"
        y="567.73712"
        id="text4136"
-       sodipodi:linespacing="125%"
        inkscape:export-xdpi="90.099998"
        inkscape:export-ydpi="90.099998"><tspan
          sodipodi:role="line"
          id="tspan4138"
          x="-539.51227"
-         y="567.73712">Kinesiocinesis</tspan></text>
+         y="567.73712"
+         style="font-size:84.5082016px;line-height:1.25;fill:#999999;fill-opacity:1;">Fisiobalance</tspan></text>
   </g>
 </svg>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="163.25691mm"
+   height="188.23511mm"
+   viewBox="0 0 163.25691 188.23511"
+   version="1.1"
+   id="svg5699"
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="hidroterapia.svg">
+  <defs
+     id="defs5693" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-146.66151"
+     inkscape:cy="264.31851"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="710"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5696">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-21.040417,-30.532504)">
+    <g
+       id="g6286"
+       inkscape:export-xdpi="52.939999"
+       inkscape:export-ydpi="52.939999">
+      <path
+         id="path5679"
+         transform="scale(0.26458333)"
+         d="m 487.66211,115.39844 c 0,0 -237.92425,279.54166 -201.47461,435.18359 20.04135,85.5772 117.61413,165.89618 205.50391,165.20899 C 578.9658,715.10828 674.32995,633.78866 693.16602,548.56836 727.65659,392.51957 487.66211,115.39844 487.66211,115.39844 Z m 83.61133,371.7207 c 23.16986,-4.2e-4 54.39844,1.00781 54.39844,1.00781 0,0 -3.16258,63.66493 -22.16211,86.63282 -27.19208,32.87198 -70.5157,56.41303 -115.84766,54.39843 0,-12.3411 -1.1456,-32.13501 1.75977,-55.58789 11.37101,-3.13236 42.33543,-6.82086 56.66796,-20.97265 16.64039,-16.43006 25.1836,-48.35352 25.1836,-65.47852 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:3.37020206px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path5679-6"
+         transform="scale(0.26458333)"
+         d="m 185.86133,515.81055 c 0,0 -123.253343,144.8132 -104.371096,225.4414 10.382158,44.33212 60.928856,85.93998 106.458986,85.58399 45.21129,-0.35377 94.61334,-42.47973 104.37109,-86.62696 C 310.18769,659.36999 185.86133,515.81055 185.86133,515.81055 Z M 229.17578,708.375 c 12.00287,-2.3e-4 28.17969,0.52148 28.17969,0.52148 0,0 -1.63801,32.98265 -11.48047,44.88086 -14.08649,17.02889 -36.53009,29.22333 -60.01367,28.17969 0,-6.39315 -0.59297,-16.64743 0.91211,-28.79687 5.8906,-1.62271 21.93074,-3.53214 29.35547,-10.86328 v -0.002 c 8.62034,-8.51138 13.04687,-25.04858 13.04687,-33.91992 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1.74588799px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
