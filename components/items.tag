@@ -45,7 +45,7 @@ items h3{
 
 items h4{
    color: #fff;
-   letter-spacing: 0.1em;
+   letter-spacing: 0.2em;
    font-size: 24px;
    text-align: center;
 }

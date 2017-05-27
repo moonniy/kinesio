@@ -40,7 +40,7 @@ navbar .navbar{
     background-color: #fafafa;
 }
 navbar .container-fluid {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 70px;
     padding: 5px;
     margin-left: 187px;
