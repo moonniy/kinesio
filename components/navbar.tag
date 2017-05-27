@@ -10,7 +10,7 @@
 
 <style>
 navbar .list-inline {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 10px;
     margin: 0;
     display: inline-block;
