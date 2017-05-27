@@ -20,6 +20,7 @@ navbar .list-inline {
 navbar .list-inline li {
     padding-right: 30px;
     padding-left: 30px;
+    vertical-align: middle;
 }
 navbar .list-inline>li.active a{
     color: #02b8bf; 
