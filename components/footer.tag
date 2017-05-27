@@ -1,12 +1,12 @@
 <footer>
 <div class="footer" role="contentinfo">
   <div class="footer-logo">
-    <img id="tl" src="/static/img/logo.png" alt="Fisiobalance">
+    <img id="tl" src="static/img/logo.png" alt="Fisiobalance">
     <a href="#">
-    <img id="fb" src="/static/img/facebook-logo-circle.png" alt="Facebook">
+    <img id="fb" src="static/img/facebook-logo-circle.png" alt="Facebook">
     </a>
     <a href="#">
-    <img id="wp" src="/static/img/whatsapp.png" alt="whatsapp">
+    <img id="wp" src="static/img/whatsapp.png" alt="whatsapp">
     </a>
   </div>
   <div class="footer-secondary">
