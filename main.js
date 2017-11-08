@@ -9,10 +9,10 @@ var footer = require('./components/footer.tag');
 
 riot.mount('navbar', { 
     items: [
-        {title: "Inicio", url: "#", class: "active"}, 
-        {title: "¿Qué es?", url: "#"}, 
-	{title: "Técnicas terapéuticas", url:"#"},
-        {title: "Contacto", url: "#"}]
+        {title: "Inicio", url: "#inicio", class: "active"}, 
+        {title: "¿Qué es?", url: "#about"}, 
+	{title: "Técnicas terapéuticas", url:"#items"},
+        {title: "Contacto", url: "#contact"}]
     });
 
 riot.mount('contact', { 

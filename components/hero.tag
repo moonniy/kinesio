@@ -1,5 +1,5 @@
 <hero>
-<div class="video-container">
+<div id="video" class="video-container">
   <video autoplay  poster="/static/video/Puzzling.jpg" id="bgvid" loop>
    <source src="static/video/Puzzling.webm" type="video/webm">
    <source src="static/video/Puzzling.mp4" type="video/mp4">

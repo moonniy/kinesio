@@ -1,5 +1,5 @@
 <contact>
-  <div class="container-fluid">
+  <div id="contact" class="container-fluid">
     <div class="info">
     <h3>{opts.title}</h3>
     <div class="col-sm-6 col">

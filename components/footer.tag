@@ -1,16 +1,16 @@
 <footer>
-<div class="footer" role="contentinfo">
+<div id="footer" class="footer" role="contentinfo">
   <div class="footer-logo">
     <img id="tl" src="static/img/logo.png" alt="Fisiobalance">
-    <a href="#">
+    <a href="https://www.facebook.com/Masajes-de-relajaci%C3%B3n-y-terapias-131034987597420/" target="_blank">
     <img id="fb" src="static/img/facebook-logo-circle.png" alt="Facebook">
     </a>
-    <a href="#">
+    <a href="https://api.whatsapp.com/send?phone=522221581669" target="_blank">
     <img id="wp" src="static/img/whatsapp.png" alt="whatsapp">
     </a>
   </div>
   <div class="footer-secondary">
-     <p><a href="#">Desarrollado por Kaltia</a></p>
+     <p><a>Desarrollado por Kaltia</a></p>
   </div>
 </div>
 
@@ -33,7 +33,7 @@ footer .footer-logo {
     width: 100%;
 }
 footer .footer-logo img#tl {
-    height: 1em;
+    height: 2.0em;
 }
 
 footer .footer-logo img#fb, img#wp {

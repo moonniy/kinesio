@@ -1,5 +1,5 @@
 <info>
-<div class ="container-fluid">
+<div id="about" class ="container-fluid">
     <h3>{ opts.title }</h3>
     <p>{ opts.description }</p>
 </div>

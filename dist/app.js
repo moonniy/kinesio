@@ -1,31 +1,31 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('contact', '<div class="container-fluid"> <div class="info"> <h3>{opts.title}</h3> <div class="col-sm-6 col"> <h4>Dirección</h4> <ul> <li>{opts.name}</li> <li>{opts.tel} / {opts.phone}</li> <li>{opts.direccion}</li> </ul> </div> <div class="col-sm-6 col"> <h4>Horarios</h4> <ul> <li>{opts.horario1}</li> <li>{opts.horario2}</li> </ul> </div> </div> <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.394658475166!2d-98.04803516907432!3d19.04637804841881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfeb62eb1b52f9%3A0x1ad412546408e66f!2sCalle+4+Pte.+705%2C+San+Miguel%2C+72990+Amozoc+de+Mota%2C+Pue.!5e0!3m2!1ses-419!2smx!4v1457481430673" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> </div> </div>', 'contact .container-fluid{ padding-left: 187px; padding-right: 187px; padding-top: 40px; padding-bottom: 90px; background-color: #fafafa; } contact h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #02b8bf; } contact h4{ font-size: 23px; margin-bottom: 20px; text-align: center; letter-spacing: 2px; font-weight: bold; } contact div .col{ display:inline-block; text-align: center; } contact div .col ul{ padding: 0; margin-bottom: 50px; } contact .info ul li{ list-style: none; color: #333; letter-spacing: 1px; padding-bottom: 5px; } contact .map{ width: 80%; margin-left: auto; margin-right: auto; }', '', function(opts) {
+module.exports = riot.tag2('contact', '<div id="contact" class="container-fluid"> <div class="info"> <h3>{opts.title}</h3> <div class="col-sm-6 col"> <h4>Dirección</h4> <ul> <li>{opts.name}</li> <li>{opts.tel} / {opts.phone}</li> <li>{opts.direccion}</li> </ul> </div> <div class="col-sm-6 col"> <h4>Horarios</h4> <ul> <li>{opts.horario1}</li> <li>{opts.horario2}</li> </ul> </div> </div> <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.394658475166!2d-98.04803516907432!3d19.04637804841881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfeb62eb1b52f9%3A0x1ad412546408e66f!2sCalle+4+Pte.+705%2C+San+Miguel%2C+72990+Amozoc+de+Mota%2C+Pue.!5e0!3m2!1ses-419!2smx!4v1457481430673" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> </div> </div>', 'contact .container-fluid{ padding-left: 187px; padding-right: 187px; padding-top: 40px; padding-bottom: 90px; background-color: #fafafa; } contact h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #02b8bf; } contact h4{ font-size: 23px; margin-bottom: 20px; text-align: center; letter-spacing: 2px; font-weight: bold; } contact div .col{ display:inline-block; text-align: center; } contact div .col ul{ padding: 0; margin-bottom: 50px; } contact .info ul li{ list-style: none; color: #333; letter-spacing: 1px; padding-bottom: 5px; } contact .map{ width: 80%; margin-left: auto; margin-right: auto; }', '', function(opts) {
 });
 
 },{"riot":8}],2:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('footer', '<div class="footer" role="contentinfo"> <div class="footer-logo"> <img id="tl" src="static/img/logo.png" alt="Fisiobalance"> <a href="#"> <img id="fb" src="static/img/facebook-logo-circle.png" alt="Facebook"> </a> <a href="#"> <img id="wp" src="static/img/whatsapp.png" alt="whatsapp"> </a> </div> <div class="footer-secondary"> <p><a href="#">Desarrollado por Kaltia</a></p> </div> </div>', 'footer .footer { background-color: #F2F2F2; padding-top: 60px; width: 100%; display: inline-block; position: absolute; text-align: center; height: 200px; } footer .footer-logo { margin-right: 1em; float: left; margin-bottom: 15px; display: block; width: 100%; } footer .footer-logo img#tl { height: 1em; } footer .footer-logo img#fb, img#wp { height: 2.0em; opacity: 0.7; padding: 1px; margin-left: 20px; } footer .footer-secondary{ font-size: 0.8em; }', '', function(opts) {
+module.exports = riot.tag2('footer', '<div id="footer" class="footer" role="contentinfo"> <div class="footer-logo"> <img id="tl" src="static/img/logo.png" alt="Fisiobalance"> <a href="https://www.facebook.com/Masajes-de-relajaci%C3%B3n-y-terapias-131034987597420/"> <img id="fb" src="static/img/facebook-logo-circle.png" alt="Facebook"> </a> <a href="https://api.whatsapp.com/send?phone=522221581669" target="_blank"> <img id="wp" src="static/img/whatsapp.png" alt="whatsapp"> </a> </div> <div class="footer-secondary"> <p><a>Desarrollado por Kaltia</a></p> </div> </div>', 'footer .footer { background-color: #F2F2F2; padding-top: 60px; width: 100%; display: inline-block; position: absolute; text-align: center; height: 200px; } footer .footer-logo { margin-right: 1em; float: left; margin-bottom: 15px; display: block; width: 100%; } footer .footer-logo img#tl { height: 2.0em; } footer .footer-logo img#fb, img#wp { height: 2.0em; opacity: 0.7; padding: 1px; margin-left: 20px; } footer .footer-secondary{ font-size: 0.8em; }', '', function(opts) {
 });
 
 },{"riot":8}],3:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('hero', '<div class="video-container"> <video autoplay poster="/static/video/Puzzling.jpg" id="bgvid" loop> <source src="static/video/Puzzling.webm" type="video/webm"> <source src="static/video/Puzzling.mp4" type="video/mp4"> </video> <div class="description"> <h1>{opts.title}</h1> <p>{opts.description}</p> </div> </div>', 'hero video{ width: 100%; position: fixed; left: 0; z-index: -1; top: 0; } hero .video-container{ position: relative; text-align: center; width: 100%; height: 600px; overflow: hidden; } hero .video-container .description{ position: absolute; top: 25%; z-index: 2; width: 100%; } hero h1{ font-size: 80px; font-weight: bold; letter-spacing: 6px; color: #fff; } hero p{ font-size: 30px; font-weight: bold; letter-spacing: 3px; color: #fff; }', '', function(opts) {
+module.exports = riot.tag2('hero', '<div id="video" class="video-container"> <video autoplay poster="/static/video/Puzzling.jpg" id="bgvid" loop> <source src="static/video/Puzzling.webm" type="video/webm"> <source src="static/video/Puzzling.mp4" type="video/mp4"> </video> <div class="description"> <h1>{opts.title}</h1> <p>{opts.description}</p> </div> </div>', 'hero video{ width: 100%; position: fixed; left: 0; z-index: -1; top: 0; } hero .video-container{ position: relative; text-align: center; width: 100%; height: 600px; overflow: hidden; } hero .video-container .description{ position: absolute; top: 25%; z-index: 2; width: 100%; } hero h1{ font-size: 80px; font-weight: bold; letter-spacing: 6px; color: #fff; } hero p{ font-size: 30px; font-weight: bold; letter-spacing: 3px; color: #fff; }', '', function(opts) {
 });
 
 },{"riot":8}],4:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('info', '<div class="container-fluid"> <h3>{opts.title}</h3> <p>{opts.description}</p> </div>', 'info .container-fluid{ padding-left: 187px; padding-right: 187px; background-color: #fafafa; padding-top: 60px; padding-bottom: 100px; } info h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #02b8bf; } info p{ font-size: 1.3em; text-align: center; letter-spacing: 2px; line-height: 1.7em; }', '', function(opts) {
+module.exports = riot.tag2('info', '<div id="about" class="container-fluid"> <h3>{opts.title}</h3> <p>{opts.description}</p> </div>', 'info .container-fluid{ padding-left: 187px; padding-right: 187px; background-color: #fafafa; padding-top: 60px; padding-bottom: 100px; } info h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #02b8bf; } info p{ font-size: 1.3em; text-align: center; letter-spacing: 2px; line-height: 1.7em; }', '', function(opts) {
 });
 
 },{"riot":8}],5:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('items', '<div class="container-fluid"> <h3>{opts.title}</h3> <virtual each="{element, i in opts.items}"> <div class="col col-xs-6 col-sm-5"> <h4>{element.title}</h4> <img riot-src="{element.thumb}"> </div> </virtual> </div>', 'items .container-fluid{ padding-left: 183px; padding-right: 183px; background: linear-gradient(rgba(13, 87, 119, 0.90), rgba(13, 87, 119, 0.90)), url(http://clinicaciudaddejaen.es/img/010.jpg) no-repeat center; padding-top: 40px; padding-bottom: 157px; } items div .col{ background-color: rgba(255,255,255,0.1); margin-top: 2%; margin-left: 2%; height: 240px; width: 48%; padding: 30px 40px 20px 40px; } items a { transition: all 0.2s ease-out; color:#4b505a } items h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #fff; } items h4{ color: #fff; letter-spacing: 0.2em; font-size: 24px; text-align: center; } items p{ color: #fff; margin-top: 30px; text-align: center; overflow: hidden; height: 120px; } items img{ height: 7em; margin: 30px auto; display: block; }', '', function(opts) {
+module.exports = riot.tag2('items', '<div id="items" class="container-fluid"> <h3>{opts.title}</h3> <virtual each="{element, i in opts.items}"> <div class="col col-xs-6 col-sm-5"> <h4>{element.title}</h4> <img riot-src="{element.thumb}"> </div> </virtual> </div>', 'items .container-fluid{ padding-left: 183px; padding-right: 183px; background: linear-gradient(rgba(13, 87, 119, 0.90), rgba(13, 87, 119, 0.90)), url(http://clinicaciudaddejaen.es/img/010.jpg) no-repeat center; padding-top: 40px; padding-bottom: 157px; } items div .col{ background-color: rgba(255,255,255,0.1); margin-top: 2%; margin-left: 2%; height: 240px; width: 48%; padding: 30px 40px 20px 40px; } items a { transition: all 0.2s ease-out; color:#4b505a } items h3{ font-size: 60px; text-align: center; margin-bottom: 50px; font-weight: bold; color: #fff; } items h4{ color: #fff; letter-spacing: 0.2em; font-size: 24px; text-align: center; } items p{ color: #fff; margin-top: 30px; text-align: center; overflow: hidden; height: 120px; } items img{ height: 7em; margin: 30px auto; display: block; }', '', function(opts) {
 });
 
 },{"riot":8}],6:[function(require,module,exports){
 var riot = require('riot');
-module.exports = riot.tag2('navbar', '<nav class="navbar navbar-default top-navbar"> <div class="container-fluid"> <a class="navbar-logo" href="#">Fisiobalance</a> <ul class="list-inline"> <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li> </ul> </div> </nav>', 'navbar .list-inline { padding-top: 20px; padding-bottom: 10px; margin: 0; display: inline-block; position: absolute; right: 0; } navbar .list-inline li { padding-right: 30px; padding-left: 30px; vertical-align: middle; } navbar .list-inline>li.active a{ color: #02b8bf; } navbar .list-inline>li a{ color: #333333; text-decoration: none; } navbar a{ font-size: 15px; } navbar li a:hover{ color: #02b8bf; transition: .20s; } navbar .navbar{ margin-bottom: 0px; background-color: #fafafa; } navbar .container-fluid { margin-top: 10px; margin-bottom: 70px; padding: 5px; margin-left: 187px; margin-right: 187px; position: relative; } a.navbar-logo { text-decoration: none; font-size: 31px; padding-top: 10px; color: #116089; position:absolute; letter-spacing: 1px; }', '', function(opts) {
+module.exports = riot.tag2('navbar', '<nav id="inicio" class="navbar navbar-default top-navbar"> <div class="container-fluid menu1"> <img id="logo" src="static/img/logo.png" alt="Fisiobalance"> <a class="navbar-logo" href="#">Fisiobalance</a> <ul class="list-inline"> <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li> </ul> </div> <div class="dropdown menu_mobile"> <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> </button> <ul class="dropdown-menu menu" aria-labelledby="dropdownMenu1"> <li each="{opts.items}" role="presentation" class="{this.class}"><a href="{this.url}">{this.title}</a></li> </ul> </div> </nav>', 'navbar .list-inline { padding-top: 20px; padding-bottom: 10px; margin: 0; display: inline-block; position: absolute; right: 0; } navbar .list-inline li { padding-right: 30px; padding-left: 30px; vertical-align: middle; } navbar .list-inline>li.active a{ color: #02b8bf; } navbar .list-inline>li a{ color: #333333; text-decoration: none; } navbar img#logo{ height: 80px; margin-right: 10px; } navbar a{ font-size: 15px; } navbar li a:hover{ color: #02b8bf; transition: .20s; } navbar .navbar{ margin-bottom: 0px; background-color: #fafafa; } navbar .container-fluid { margin-top: 10px; margin-bottom: 10px; padding: 5px; margin-left: 187px; margin-right: 187px; position: relative; } a.navbar-logo { text-decoration: none; font-size: 31px; padding-top: 15px; color: #116089; position:absolute; letter-spacing: 1px; }', '', function(opts) {
 });
 
 },{"riot":8}],7:[function(require,module,exports){
@@ -40,10 +40,10 @@ var footer = require('./components/footer.tag');
 
 riot.mount('navbar', { 
     items: [
-        {title: "Inicio", url: "#", class: "active"}, 
-        {title: "¿Qué es?", url: "#"}, 
-	{title: "Técnicas terapéuticas", url:"#"},
-        {title: "Contacto", url: "#"}]
+        {title: "Inicio", url: "#inicio", class: "active"}, 
+        {title: "¿Qué es?", url: "#about"}, 
+	{title: "Técnicas terapéuticas", url:"#items"},
+        {title: "Contacto", url: "#contact"}]
     });
 
 riot.mount('contact', { 
@@ -107,11 +107,11 @@ riot.mount('items', {
       });
 
 },{"./components/contact.tag":1,"./components/footer.tag":2,"./components/hero.tag":3,"./components/info.tag":4,"./components/items.tag":5,"./components/navbar.tag":6,"riot":8}],8:[function(require,module,exports){
-/* Riot v2.3.18, @license MIT */
+/* Riot v2.6.8, @license MIT */
 
 ;(function(window, undefined) {
   'use strict';
-var riot = { version: 'v2.3.18', settings: {} },
+var riot = { version: 'v2.6.8', settings: {} },
   // be aware, internal usage
   // ATTENTION: prefix the global dynamic variables with `__`
 
@@ -137,9 +137,13 @@ var riot = { version: 'v2.3.18', settings: {} },
   T_OBJECT = 'object',
   T_UNDEF  = 'undefined',
   T_FUNCTION = 'function',
+  XLINK_NS = 'http://www.w3.org/1999/xlink',
+  XLINK_REGEX = /^xlink:(\w+)/,
   // special native tags that cannot be treated like the others
   SPECIAL_TAGS_REGEX = /^(?:t(?:body|head|foot|[rhd])|caption|col(?:group)?|opt(?:ion|group))$/,
-  RESERVED_WORDS_BLACKLIST = ['_item', '_id', '_parent', 'update', 'root', 'mount', 'unmount', 'mixin', 'isMounted', 'isLoop', 'tags', 'parent', 'opts', 'trigger', 'on', 'off', 'one'],
+  RESERVED_WORDS_BLACKLIST = /^(?:_(?:item|id|parent)|update|root|(?:un)?mount|mixin|is(?:Mounted|Loop)|tags|parent|opts|trigger|o(?:n|ff|ne))$/,
+  // SVG tags list https://www.w3.org/TR/SVG/attindex.html#PresentationAttributes
+  SVG_TAGS_LIST = ['altGlyph', 'animate', 'animateColor', 'circle', 'clipPath', 'defs', 'ellipse', 'feBlend', 'feColorMatrix', 'feComponentTransfer', 'feComposite', 'feConvolveMatrix', 'feDiffuseLighting', 'feDisplacementMap', 'feFlood', 'feGaussianBlur', 'feImage', 'feMerge', 'feMorphology', 'feOffset', 'feSpecularLighting', 'feTile', 'feTurbulence', 'filter', 'font', 'foreignObject', 'g', 'glyph', 'glyphRef', 'image', 'line', 'linearGradient', 'marker', 'mask', 'missing-glyph', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'switch', 'symbol', 'text', 'textPath', 'tref', 'tspan', 'use'],
 
   // version# for IE 8-11, 0 for others
   IE_VERSION = (window && window.document || {}).documentMode | 0,
@@ -157,16 +161,37 @@ riot.observable = function(el) {
   el = el || {}
 
   /**
-   * Private variables and methods
+   * Private variables
    */
   var callbacks = {},
-    slice = Array.prototype.slice,
-    onEachEvent = function(e, fn) { e.replace(/\S+/g, fn) }
+    slice = Array.prototype.slice
 
-  // extend the object adding the observable methods
+  /**
+   * Private Methods
+   */
+
+  /**
+   * Helper function needed to get and loop all the events in a string
+   * @param   { String }   e - event string
+   * @param   {Function}   fn - callback
+   */
+  function onEachEvent(e, fn) {
+    var es = e.split(' '), l = es.length, i = 0
+    for (; i < l; i++) {
+      var name = es[i]
+      if (name) fn(name, i)
+    }
+  }
+
+  /**
+   * Public Api
+   */
+
+  // extend the el object adding the observable methods
   Object.defineProperties(el, {
     /**
-     * Listen to the given space separated list of `events` and execute the `callback` each time an event is triggered.
+     * Listen to the given space separated list of `events` and
+     * execute the `callback` each time an event is triggered.
      * @param  { String } events - events ids
      * @param  { Function } fn - callback function
      * @returns { Object } el
@@ -197,7 +222,7 @@ riot.observable = function(el) {
       value: function(events, fn) {
         if (events == '*' && !fn) callbacks = {}
         else {
-          onEachEvent(events, function(name) {
+          onEachEvent(events, function(name, pos) {
             if (fn) {
               var arr = callbacks[name]
               for (var i = 0, cb; cb = arr && arr[i]; ++i) {
@@ -214,7 +239,8 @@ riot.observable = function(el) {
     },
 
     /**
-     * Listen to the given space separated list of `events` and execute the `callback` at most once
+     * Listen to the given space separated list of `events` and
+     * execute the `callback` at most once
      * @param   { String } events - events ids
      * @param   { Function } fn - callback function
      * @returns { Object } el
@@ -233,7 +259,8 @@ riot.observable = function(el) {
     },
 
     /**
-     * Execute all callback functions that listen to the given space separated list of `events`
+     * Execute all callback functions that listen to
+     * the given space separated list of `events`
      * @param   { String } events - events ids
      * @returns { Object } el
      */
@@ -249,12 +276,12 @@ riot.observable = function(el) {
           args[i] = arguments[i + 1] // skip first argument
         }
 
-        onEachEvent(events, function(name) {
+        onEachEvent(events, function(name, pos) {
 
           fns = slice.call(callbacks[name] || [], 0)
 
           for (var i = 0, fn; fn = fns[i]; ++i) {
-            if (fn.busy) return
+            if (fn.busy) continue
             fn.busy = 1
             fn.apply(el, fn.typed ? [name].concat(args) : args)
             if (fns[i] !== fn) { i-- }
@@ -396,7 +423,7 @@ function getPathFromBase(href) {
 
 function emit(force) {
   // the stack is needed for redirections
-  var isRoot = emitStackLevel == 0
+  var isRoot = emitStackLevel == 0, first
   if (MAX_EMIT_STACK_LEVEL <= emitStackLevel) return
 
   emitStackLevel++
@@ -408,10 +435,7 @@ function emit(force) {
     }
   })
   if (isRoot) {
-    while (emitStack.length) {
-      emitStack[0]()
-      emitStack.shift()
-    }
+    while (first = emitStack.shift()) first() // stack increses within this call
     emitStackLevel = 0
   }
 }
@@ -434,13 +458,13 @@ function click(e) {
     || el.href.indexOf(loc.href.match(RE_ORIGIN)[0]) == -1 // cross origin
   ) return
 
-  if (el.href != loc.href) {
-    if (
+  if (el.href != loc.href
+    && (
       el.href.split('#')[0] == loc.href.split('#')[0] // internal jump
-      || base != '#' && getPathFromRoot(el.href).indexOf(base) !== 0 // outside of base
+      || base[0] != '#' && getPathFromRoot(el.href).indexOf(base) !== 0 // outside of base
+      || base[0] == '#' && el.href.split(base)[0] != loc.href.split(base)[0] // outside of #base
       || !go(getPathFromBase(el.href), el.title || doc.title) // route not found
-    ) return
-  }
+    )) return
 
   e.preventDefault()
 }
@@ -453,22 +477,20 @@ function click(e) {
  * @returns {boolean} - route not found flag
  */
 function go(path, title, shouldReplace) {
-  if (hist) { // if a browser
-    path = base + normalize(path)
-    title = title || doc.title
-    // browsers ignores the second parameter `title`
-    shouldReplace
-      ? hist.replaceState(null, title, path)
-      : hist.pushState(null, title, path)
-    // so we need to set it manually
-    doc.title = title
-    routeFound = false
-    emit()
-    return routeFound
-  }
-
   // Server-side usage: directly execute handlers for the path
-  return central[TRIGGER]('emit', getPathFromBase(path))
+  if (!hist) return central[TRIGGER]('emit', getPathFromBase(path))
+
+  path = base + normalize(path)
+  title = title || doc.title
+  // browsers ignores the second parameter `title`
+  shouldReplace
+    ? hist.replaceState(null, title, path)
+    : hist.pushState(null, title, path)
+  // so we need to set it manually
+  doc.title = title
+  routeFound = false
+  emit()
+  return routeFound
 }
 
 /**
@@ -620,9 +642,8 @@ riot.route = route
 
 /**
  * The riot template engine
- * @version v2.3.22
+ * @version v2.4.2
  */
-
 /**
  * riot.util.brackets
  *
@@ -644,6 +665,10 @@ var brackets = (function (UNDEF) {
     S_QBLOCKS = R_STRINGS.source + '|' +
       /(?:\breturn\s+|(?:[$\w\)\]]|\+\+|--)\s*(\/)(?![*\/]))/.source + '|' +
       /\/(?=[^*\/])[^[\/\\]*(?:(?:\[(?:\\.|[^\]\\]*)*\]|\\.)[^[\/\\]*)*?(\/)[gim]*/.source,
+
+    UNSUPPORTED = RegExp('[\\' + 'x00-\\x1F<>a-zA-Z0-9\'",;\\\\]'),
+
+    NEED_ESCAPE = /(?=[[\]()*+?.^$|])/g,
 
     FINDBRACES = {
       '(': RegExp('([()])|'   + S_QBLOCKS, REGLOB),
@@ -685,10 +710,10 @@ var brackets = (function (UNDEF) {
 
     var arr = pair.split(' ')
 
-    if (arr.length !== 2 || /[\x00-\x1F<>a-zA-Z0-9'",;\\]/.test(pair)) {
+    if (arr.length !== 2 || UNSUPPORTED.test(pair)) {
       throw new Error('Unsupported brackets "' + pair + '"')
     }
-    arr = arr.concat(pair.replace(/(?=[[\]()*+?.^$|])/g, '\\').split(' '))
+    arr = arr.concat(pair.replace(NEED_ESCAPE, '\\').split(' '))
 
     arr[4] = _rewrite(arr[1].length > 1 ? /{[\S\s]*?}/ : _pairs[4], arr)
     arr[5] = _rewrite(pair.length > 3 ? /\\({|})/g : _pairs[5], arr)
@@ -848,6 +873,9 @@ var tmpl = (function () {
 
   _tmpl.loopKeys = brackets.loopKeys
 
+  // istanbul ignore next
+  _tmpl.clearCache = function () { _cache = {} }
+
   _tmpl.errorHandler = null
 
   function _logErr (err, ctx) {
@@ -867,11 +895,11 @@ var tmpl = (function () {
 
     if (expr.slice(0, 11) !== 'try{return ') expr = 'return ' + expr
 
-    return new Function('E', expr + ';')    //eslint-disable-line no-new-func
+    return new Function('E', expr + ';')    // eslint-disable-line no-new-func
   }
 
   var
-    CH_IDEXPR = '\u2057',
+    CH_IDEXPR = String.fromCharCode(0x2057),
     RE_CSNAME = /^(?:(-?[_A-Za-z\xA0-\xFF][-\w\xA0-\xFF]*)|\u2057(\d+)~):/,
     RE_QBLOCK = RegExp(brackets.S_QBLOCKS, 'g'),
     RE_DQUOTE = /\u2057/g,
@@ -987,7 +1015,7 @@ var tmpl = (function () {
   // istanbul ignore next: not both
   var // eslint-disable-next-line max-len
     JS_CONTEXT = '"in this?this:' + (typeof window !== 'object' ? 'global' : 'window') + ').',
-    JS_VARNAME = /[,{][$\w]+:|(^ *|[^$\w\.])(?!(?:typeof|true|false|null|undefined|in|instanceof|is(?:Finite|NaN)|void|NaN|new|Date|RegExp|Math)(?![$\w]))([$_A-Za-z][$\w]*)/g,
+    JS_VARNAME = /[,{][\$\w]+(?=:)|(^ *|[^$\w\.{])(?!(?:typeof|true|false|null|undefined|in|instanceof|is(?:Finite|NaN)|void|NaN|new|Date|RegExp|Math)(?![$\w]))([$_A-Za-z][$\w]*)/g,
     JS_NOPROPS = /^(?=(\.[$\w]+))\1(?:[^.[(]|$)/
 
   function _wrapExpr (expr, asText, key) {
@@ -1027,10 +1055,7 @@ var tmpl = (function () {
     return expr
   }
 
-  // istanbul ignore next: compatibility fix for beta versions
-  _tmpl.parse = function (s) { return s }
-
-  _tmpl.version = brackets.version = 'v2.3.22'
+  _tmpl.version = brackets.version = 'v2.4.2'
 
   return _tmpl
 
@@ -1046,7 +1071,7 @@ var tmpl = (function () {
 var mkdom = (function _mkdom() {
   var
     reHasYield  = /<yield\b/i,
-    reYieldAll  = /<yield\s*(?:\/>|>([\S\s]*?)<\/yield\s*>)/ig,
+    reYieldAll  = /<yield\s*(?:\/>|>([\S\s]*?)<\/yield\s*>|>)/ig,
     reYieldSrc  = /<yield\s+to=['"]([^'">]*)['"]\s*>([\S\s]*?)<\/yield\s*>/ig,
     reYieldDest = /<yield\s+from=['"]?([-\w]+)['"]?\s*(?:\/>|>([\S\s]*?)<\/yield\s*>)/ig
   var
@@ -1058,16 +1083,17 @@ var mkdom = (function _mkdom() {
    * Creates a DOM element to wrap the given content. Normally an `DIV`, but can be
    * also a `TABLE`, `SELECT`, `TBODY`, `TR`, or `COLGROUP` element.
    *
-   * @param   {string} templ  - The template coming from the custom tag definition
-   * @param   {string} [html] - HTML content that comes from the DOM element where you
+   * @param   { String } templ  - The template coming from the custom tag definition
+   * @param   { String } [html] - HTML content that comes from the DOM element where you
    *           will mount the tag, mostly the original tag in the page
+   * @param   { Boolean } checkSvg - flag needed to know if we need to force the svg rendering in case of loop nodes
    * @returns {HTMLElement} DOM element with _templ_ merged through `YIELD` with the _html_.
    */
-  function _mkdom(templ, html) {
+  function _mkdom(templ, html, checkSvg) {
     var
       match   = templ && templ.match(/^\s*<([-\w]+)/),
       tagName = match && match[1].toLowerCase(),
-      el = mkEl('div')
+      el = mkEl('div', checkSvg && isSVGTag(tagName))
 
     // replace all the yield tags with the tag inner html
     templ = replaceYield(templ, html)
@@ -1076,7 +1102,7 @@ var mkdom = (function _mkdom() {
     if (tblTags.test(tagName))
       el = specialTags(el, templ, tagName)
     else
-      el.innerHTML = templ
+      setInnerHTML(el, templ)
 
     el.stub = true
 
@@ -1229,6 +1255,22 @@ function moveVirtual(tag, src, target, len) {
   }
 }
 
+/**
+ * Insert a new tag avoiding the insert for the conditional tags
+ * @param   {Boolean} isVirtual [description]
+ * @param   { Tag }  prevTag - tag instance used as reference to prepend our new tag
+ * @param   { Tag }  newTag - new tag to be inserted
+ * @param   { HTMLElement }  root - loop parent node
+ * @param   { Array }  tags - array containing the current tags list
+ * @param   { Function }  virtualFn - callback needed to move or insert virtual DOM
+ * @param   { Object } dom - DOM node we need to loop
+ */
+function insertTag(isVirtual, prevTag, newTag, root, tags, virtualFn, dom) {
+  if (isInStub(prevTag.root)) return
+  if (isVirtual) virtualFn(prevTag, root, newTag, dom.childNodes.length)
+  else root.insertBefore(prevTag.root, newTag.root) // #1374 some browsers reset selected here
+}
+
 
 /**
  * Manage tags having the 'each'
@@ -1243,7 +1285,7 @@ function _each(dom, parent, expr) {
 
   var mustReorder = typeof getAttr(dom, 'no-reorder') !== T_STRING || remAttr(dom, 'no-reorder'),
     tagName = getTagName(dom),
-    impl = __tagImpl[tagName] || { tmpl: dom.outerHTML },
+    impl = __tagImpl[tagName] || { tmpl: getOuterHTML(dom) },
     useRoot = SPECIAL_TAGS_REGEX.test(tagName),
     root = dom.parentNode,
     ref = document.createTextNode(''),
@@ -1290,7 +1332,7 @@ function _each(dom, parent, expr) {
       // reorder only if the items are objects
       var
         item = items[i],
-        _mustReorder = mustReorder && item instanceof Object && !hasKeys,
+        _mustReorder = mustReorder && typeof item == T_OBJECT && !hasKeys,
         oldPos = oldItems.indexOf(item),
         pos = ~oldPos && _mustReorder ? oldPos : i,
         // does a tag exist in this position?
@@ -1324,9 +1366,7 @@ function _each(dom, parent, expr) {
         }
         // this tag must be insert
         else {
-          if (isVirtual)
-            addVirtual(tag, root, tags[i])
-          else root.insertBefore(tag.root, tags[i].root) // #1374 some browsers reset selected here
+          insertTag(isVirtual, tag, tags[i], root, tags, addVirtual, dom)
           oldItems.splice(i, 0, item)
         }
 
@@ -1339,10 +1379,11 @@ function _each(dom, parent, expr) {
         pos !== i && _mustReorder &&
         tags[i] // fix 1581 unable to reproduce it in a test!
       ) {
-        // update the DOM
-        if (isVirtual)
-          moveVirtual(tag, root, tags[i], dom.childNodes.length)
-        else root.insertBefore(tag.root, tags[i].root)
+        // #closes 2040 PLEASE DON'T REMOVE IT!
+        // there are no tests for this feature
+        if (contains(items, oldItems[i]))
+          insertTag(isVirtual, tag, tags[i], root, tags, moveVirtual, dom)
+
         // update the position attribute if it exists
         if (expr.pos)
           tag[expr.pos] = i
@@ -1366,8 +1407,8 @@ function _each(dom, parent, expr) {
     unmountRedundant(items, tags)
 
     // insert the new nodes
+    root.insertBefore(frag, ref)
     if (isOption) {
-      root.appendChild(frag)
 
       // #1374 FireFox bug in <option selected={expression}>
       if (FIREFOX && !root.multiple) {
@@ -1380,7 +1421,6 @@ function _each(dom, parent, expr) {
         }
       }
     }
-    else root.insertBefore(frag, ref)
 
     // set the 'tags' property of the parent tag
     // if child is 'undefined' it means that we don't need to set this property
@@ -1552,7 +1592,9 @@ function Tag(impl, conf, innerHTML) {
   // it could be handy to use it also to improve the virtual dom rendering speed
   defineProperty(this, '_riot_id', ++__uid) // base 1 allows test !t._riot_id
 
-  extend(this, { parent: parent, root: root, opts: opts, tags: {} }, item)
+  extend(this, { parent: parent, root: root, opts: opts}, item)
+  // protect the "tags" property from being overridden
+  defineProperty(this, 'tags', {})
 
   // grab attributes
   each(root.attributes, function(el) {
@@ -1561,7 +1603,7 @@ function Tag(impl, conf, innerHTML) {
     if (tmpl.hasExpr(val)) attr[el.name] = val
   })
 
-  dom = mkdom(impl.tmpl, innerHTML)
+  dom = mkdom(impl.tmpl, innerHTML, isLoop)
 
   // options
   function updateOpts() {
@@ -1569,6 +1611,7 @@ function Tag(impl, conf, innerHTML) {
 
     // update opts from current DOM attributes
     each(root.attributes, function(el) {
+      if (el.name in attr) return
       var val = el.value
       opts[toCamel(el.name)] = tmpl.hasExpr(val) ? tmpl(val, ctx) : val
     })
@@ -1585,16 +1628,16 @@ function Tag(impl, conf, innerHTML) {
     }
   }
 
-  function inheritFromParent () {
-    if (!self.parent || !isLoop) return
-    each(Object.keys(self.parent), function(k) {
+  function inheritFrom(target) {
+    each(Object.keys(target), function(k) {
       // some properties must be always in sync with the parent tag
-      var mustSync = !contains(RESERVED_WORDS_BLACKLIST, k) && contains(propsInSyncWithParent, k)
+      var mustSync = !RESERVED_WORDS_BLACKLIST.test(k) && contains(propsInSyncWithParent, k)
+
       if (typeof self[k] === T_UNDEF || mustSync) {
         // track the property to keep in sync
         // so we can keep it updated
         if (!mustSync) propsInSyncWithParent.push(k)
-        self[k] = self.parent[k]
+        self[k] = target[k]
       }
     })
   }
@@ -1610,8 +1653,10 @@ function Tag(impl, conf, innerHTML) {
     // make sure the data passed will not override
     // the component core methods
     data = cleanUpData(data)
-    // inherit properties from the parent
-    inheritFromParent()
+    // inherit properties from the parent in loop
+    if (isLoop) {
+      inheritFrom(self.parent)
+    }
     // normalize the tag properties in case an item object was initially passed
     if (data && isObject(item)) {
       normalizeData(data)
@@ -1636,7 +1681,9 @@ function Tag(impl, conf, innerHTML) {
 
   defineProperty(this, 'mixin', function() {
     each(arguments, function(mix) {
-      var instance
+      var instance,
+        props = [],
+        obj
 
       mix = typeof mix === T_STRING ? riot.mixin(mix) : mix
 
@@ -1644,17 +1691,32 @@ function Tag(impl, conf, innerHTML) {
       if (isFunction(mix)) {
         // create the new mixin instance
         instance = new mix()
-        // save the prototype to loop it afterwards
-        mix = mix.prototype
       } else instance = mix
 
+      var proto = Object.getPrototypeOf(instance)
+
+      // build multilevel prototype inheritance chain property list
+      do props = props.concat(Object.getOwnPropertyNames(obj || instance))
+      while (obj = Object.getPrototypeOf(obj || instance))
+
       // loop the keys in the function prototype or the all object keys
-      each(Object.getOwnPropertyNames(mix), function(key) {
+      each(props, function(key) {
         // bind methods to self
-        if (key != 'init')
-          self[key] = isFunction(instance[key]) ?
-                        instance[key].bind(self) :
-                        instance[key]
+        // allow mixins to override other properties/parent mixins
+        if (key != 'init') {
+          // check for getters/setters
+          var descriptor = Object.getOwnPropertyDescriptor(instance, key) || Object.getOwnPropertyDescriptor(proto, key)
+          var hasGetterSetter = descriptor && (descriptor.get || descriptor.set)
+
+          // apply method only if it does not already exist on the instance
+          if (!self.hasOwnProperty(key) && hasGetterSetter) {
+            Object.defineProperty(self, key, descriptor)
+          } else {
+            self[key] = isFunction(instance[key]) ?
+              instance[key].bind(self) :
+              instance[key]
+          }
+        }
       })
 
       // init method will be called automatically
@@ -1667,9 +1729,18 @@ function Tag(impl, conf, innerHTML) {
 
     updateOpts()
 
-    // add global mixin
+    // add global mixins
     var globalMixin = riot.mixin(GLOBAL_MIXIN)
-    if (globalMixin) self.mixin(globalMixin)
+
+    if (globalMixin)
+      for (var i in globalMixin)
+        if (globalMixin.hasOwnProperty(i))
+          self.mixin(globalMixin[i])
+
+    // children in loop should inherit from true parent
+    if (self._parent && self._parent.root.isLoop) {
+      inheritFrom(self._parent)
+    }
 
     // initialiation
     if (impl.fn) impl.fn.call(self, opts)
@@ -1877,7 +1948,7 @@ function update(expressions, tag) {
     var dom = expr.dom,
       attrName = expr.attr,
       value = tmpl(expr.expr, tag),
-      parent = expr.dom.parentNode
+      parent = expr.parent || expr.dom.parentNode
 
     if (expr.bool) {
       value = !!value
@@ -1899,6 +1970,9 @@ function update(expressions, tag) {
       value += ''
       // test for parent avoids error with invalid assignment to nodeValue
       if (parent) {
+        // cache the parent node because somehow it will become null on IE
+        // on the next iteration
+        expr.parent = parent
         if (parent.tagName === 'TEXTAREA') {
           parent.value = value                    // #1113
           if (!IE_VERSION) dom.nodeValue = value  // #1625 IE throws here, nodeValue
@@ -1910,12 +1984,15 @@ function update(expressions, tag) {
 
     // ~~#1612: look for changes in dom.value when updating the value~~
     if (attrName === 'value') {
-      dom.value = value
+      if (dom.value !== value) {
+        dom.value = value
+        setAttr(dom, attrName, value)
+      }
       return
+    } else {
+      // remove original attribute
+      remAttr(dom, attrName)
     }
-
-    // remove original attribute
-    remAttr(dom, attrName)
 
     // event handler
     if (isFunction(value)) {
@@ -2004,6 +2081,46 @@ function isFunction(v) {
 }
 
 /**
+ * Get the outer html of any DOM node SVGs included
+ * @param   { Object } el - DOM node to parse
+ * @returns { String } el.outerHTML
+ */
+function getOuterHTML(el) {
+  if (el.outerHTML) return el.outerHTML
+  // some browsers do not support outerHTML on the SVGs tags
+  else {
+    var container = mkEl('div')
+    container.appendChild(el.cloneNode(true))
+    return container.innerHTML
+  }
+}
+
+/**
+ * Set the inner html of any DOM node SVGs included
+ * @param { Object } container - DOM node where we will inject the new html
+ * @param { String } html - html to inject
+ */
+function setInnerHTML(container, html) {
+  if (typeof container.innerHTML != T_UNDEF) container.innerHTML = html
+  // some browsers do not support innerHTML on the SVGs tags
+  else {
+    var doc = new DOMParser().parseFromString(html, 'application/xml')
+    container.appendChild(
+      container.ownerDocument.importNode(doc.documentElement, true)
+    )
+  }
+}
+
+/**
+ * Checks wether a DOM node must be considered part of an svg document
+ * @param   { String }  name - tag name
+ * @returns { Boolean } -
+ */
+function isSVGTag(name) {
+  return ~SVG_TAGS_LIST.indexOf(name)
+}
+
+/**
  * Detect if the argument passed is an object, exclude null.
  * NOTE: Use isObject(x) && !isArray(x) to excludes arrays.
  * @param   { * } v - whatever you want to pass to this function
@@ -2044,13 +2161,17 @@ function getAttr(dom, name) {
 }
 
 /**
- * Set any DOM attribute
+ * Set any DOM/SVG attribute
  * @param { Object } dom - DOM node we want to update
  * @param { String } name - name of the property we want to set
  * @param { String } val - value of the property we want to set
  */
 function setAttr(dom, name, val) {
-  dom.setAttribute(name, val)
+  var xlink = XLINK_REGEX.exec(name)
+  if (xlink && xlink[1])
+    dom.setAttributeNS(XLINK_NS, xlink[1], val)
+  else
+    dom.setAttribute(name, val)
 }
 
 /**
@@ -2248,8 +2369,7 @@ function cleanUpData(data) {
 
   var o = {}
   for (var key in data) {
-    if (!contains(RESERVED_WORDS_BLACKLIST, key))
-      o[key] = data[key]
+    if (!RESERVED_WORDS_BLACKLIST.test(key)) o[key] = data[key]
   }
   return o
 }
@@ -2304,10 +2424,13 @@ function isInStub(dom) {
 /**
  * Create a generic DOM node
  * @param   { String } name - name of the DOM node we want to create
+ * @param   { Boolean } isSvg - should we use a SVG as parent node?
  * @returns { Object } DOM node just created
  */
-function mkEl(name) {
-  return document.createElement(name)
+function mkEl(name, isSvg) {
+  return isSvg ?
+    document.createElementNS('http://www.w3.org/2000/svg', 'svg') :
+    document.createElement(name)
 }
 
 /**
@@ -2336,9 +2459,7 @@ function $(selector, ctx) {
  * @returns { Object } child instance
  */
 function inherit(parent) {
-  function Child() {}
-  Child.prototype = parent
-  return new Child()
+  return Object.create(parent || null)
 }
 
 /**
@@ -2461,23 +2582,41 @@ riot.util = { brackets: brackets, tmpl: tmpl }
  * Create a mixin that could be globally shared across all the tags
  */
 riot.mixin = (function() {
-  var mixins = {}
+  var mixins = {},
+    globals = mixins[GLOBAL_MIXIN] = {},
+    _id = 0
 
   /**
    * Create/Return a mixin by its name
-   * @param   { String } name - mixin name (global mixin if missing)
-   * @param   { Object } mixin - mixin logic
-   * @returns { Object } the mixin logic
+   * @param   { String }  name - mixin name (global mixin if object)
+   * @param   { Object }  mixin - mixin logic
+   * @param   { Boolean } g - is global?
+   * @returns { Object }  the mixin logic
    */
-  return function(name, mixin) {
+  return function(name, mixin, g) {
+    // Unnamed global
     if (isObject(name)) {
-      mixin = name
-      mixins[GLOBAL_MIXIN] = extend(mixins[GLOBAL_MIXIN] || {}, mixin)
+      riot.mixin('__unnamed_'+_id++, name, true)
       return
     }
 
-    if (!mixin) return mixins[name]
-    mixins[name] = mixin
+    var store = g ? globals : mixins
+
+    // Getter
+    if (!mixin) {
+      if (typeof store[name] === T_UNDEF) {
+        throw new Error('Unregistered mixin: ' + name)
+      }
+      return store[name]
+    }
+    // Setter
+    if (isFunction(mixin)) {
+      extend(mixin.prototype, store[name] || {})
+      store[name] = mixin
+    }
+    else {
+      store[name] = extend(store[name] || {}, mixin)
+    }
   }
 
 })()

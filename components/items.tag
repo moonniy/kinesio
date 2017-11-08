@@ -1,5 +1,5 @@
 <items>
-<div class ="container-fluid">
+<div id="items" class ="container-fluid">
     <h3>{ opts.title }</h3>
     <virtual each={ element, i in opts.items }>
       <div class="col col-xs-6 col-sm-5">
